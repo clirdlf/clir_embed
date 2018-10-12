@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)https://www.clir.org/ -->
+<html lang="en-US" prefix="og: http://ogp.me/ns#" class="no-js wf-fontawesome-n4-active wf-active"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript" src="./clir_test_files/0d572a862a"></script><script src="./clir_test_files/nr-1071.min.js"></script><script type="text/javascript" async="" src="./clir_test_files/recaptcha__en.js"></script><script async="" src="./clir_test_files/sp.js"></script><script src="./clir_test_files/webfontloader.js"></script><script type="text/javascript" async="" src="./clir_test_files/linkid.js"></script><script async="" src="./clir_test_files/analytics.js"></script><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);</script>
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://www.clir.org/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://www.clir.org/wp-content/themes/alchem-pro/js/html5.js"></script>
+	<![endif]-->
+    <title>Landing Page • CLIR</title>
+<link rel="alternate" hreflang="en" href="https://clir.wordpress.clir.org/">
+<!-- Jetpack Site Verification Tags -->
+<meta name="msvalidate.01" content="16C471C6E0C6BD925DBFDFABD9354910">
+<meta name="yandex-verification" content="f0838fa024e3a807">
+
+<!-- This site is optimized with the Yoast SEO plugin v8.4 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="https://www.clir.org/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Landing Page • CLIR">
+<meta property="og:url" content="https://www.clir.org/">
+<meta property="og:site_name" content="CLIR">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Landing Page • CLIR">
+<meta name="twitter:site" content="@clirnews">
+<meta name="twitter:creator" content="@clirnews">
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/www.clir.org\/","name":"CLIR","potentialAction":{"@type":"SearchAction","target":"https:\/\/www.clir.org\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/www.clir.org\/","sameAs":["https:\/\/www.facebook.com\/pages\/Council-on-Library-and-Information-Resources-CLIR\/300100435096","http:\/\/www.youtube.com\/user\/DLFCLIR?blend=2&ob=0","https:\/\/twitter.com\/clirnews"],"@id":"https:\/\/www.clir.org\/#organization","name":"CLIR","logo":"https:\/\/clir.wordpress.clir.org\/wp-content\/uploads\/sites\/6\/2016\/09\/clir.png"}</script>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="dns-prefetch" href="https://s0.wp.com/">
+<link rel="dns-prefetch" href="https://clir.wordpress.clir.org/">
+<link rel="dns-prefetch" href="https://use.fontawesome.com/">
+<link rel="dns-prefetch" href="https://rawgit.com/">
+<link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+<link rel="dns-prefetch" href="https://s.w.org/">
+<link rel="alternate" type="application/rss+xml" title="CLIR » Feed" href="https://www.clir.org/feed/">
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.2.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">var mi_version='7.2.0';var mi_track_user=true;var mi_no_track_reason='';var disableStr='ga-disable-UA-665553-12';function __gaTrackerIsOptedOut(){return document.cookie.indexOf(disableStr+'=true')>-1;}if(__gaTrackerIsOptedOut()){window[disableStr]=true;}function __gaTrackerOptout(){document.cookie=disableStr+'=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';window[disableStr]=true;}if(mi_track_user){(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');__gaTracker('create','UA-665553-12','auto');__gaTracker('set','forceSSL',true);__gaTracker('require','displayfeatures');__gaTracker('require','linkid','linkid.js');__gaTracker('send','pageview');}else{console.log("");(function(){var noopfn=function(){return null;};var noopnullfn=function(){return null;};var Tracker=function(){return null;};var p=Tracker.prototype;p.get=noopfn;p.set=noopfn;p.send=noopfn;var __gaTracker=function(){var len=arguments.length;if(len===0){return;}var f=arguments[len-1];if(typeof f!=='object'||f===null||typeof f.hitCallback!=='function'){console.log('Not running function __gaTracker('+arguments[0]+" ....) because you are not being tracked. "+mi_no_track_reason);return;}try{f.hitCallback();}catch(ex){}};__gaTracker.create=function(){return new Tracker();};__gaTracker.getByName=noopnullfn;__gaTracker.getAll=function(){return[];};__gaTracker.remove=noopfn;window['__gaTracker']=__gaTracker;})();}</script>
+<!-- / Google Analytics by MonsterInsights -->
+
+    <!-- Global -->
+
+    <style>.sc_team_single_member .sc_single_side .social span{background:#1f7dcf}</style>
+
+    <!-- Grid -->
+
+    <style>.grid#sc_our_team .sc_team_member .sc_team_member_name,.grid#sc_our_team .sc_team_member .sc_team_member_jobtitle{background:#1f7dcf}.grid#sc_our_team .sc_team_member{padding:5px!important}</style>
+
+    <!-- Grid Circles -->
+
+    <style>.grid_circles#sc_our_team .sc_team_member .sc_team_member_jobtitle,.grid_circles#sc_our_team .sc_team_member .sc_team_member_name{background:#1f7dcf}.grid_circles#sc_our_team .sc_team_member{margin:5px}</style>
+
+    <!-- Grid Circles 2 -->
+
+    <style>.grid_circles2#sc_our_team .sc_team_member{margin:5px}</style>
+
+
+    <!-- Global -->
+
+    <style>#sc_our_team .sc_team_member_name{font-size:16px!important}#sc_our_team .sc_team_member_jobtitle{font-size:12px!important}.sc_our_team_lightbox .name,.sc_personal_quote span.sc_team_icon-quote-left,.sc_team_single_member .sc_member_articles a,.sc-team-member-posts a{color:#1f7dcf}#sc_team_sidebar_body .social span{background:#1f7dcf}#sc_our_team_lightbox .progress,#sc_our_team_lightbox .social span,.sc_our_team_panel .sc-right-panel .sc-name,.sc_our_team_panel .sc-right-panel .sc-skills .progress,.sc_team_single_member .sc_single_side .social span,#sc_our_team .sc_team_member .icons span,.sc_team_single_member .sc_team_single_skills .progress,.sc-tags .sc-single-tag{background:#1f7dcf}@media (min-width:480px ){#sc_our_team_lightbox .sc_our_team_lightbox{margin-top:100px!important}#sc_our_team_panel .sc_our_team_panel{margin-top:0!important;padding-bottom:0!important}}</style>
+
+    <!-- Carousel -->
+
+    <style>.carousel .sc_team_member{margin:5px}</style>
+
+    <!-- Grid Boxes 2 -->
+
+    <style>.grid2 .sc_team_member .sc_team_member_jobtitle,.grid2 .sc_team_member_inner .image-container i.icon:hover{color:#1f7dcf}.grid2 .sc_team_member_inner .image-container{border-bottom:20px solid #1f7dcf}</style>
+
+    <!-- Grid Boxes 3 -->
+
+    <style>.grid3 .sc_team_member{padding:5px}.grid3 .sc_team_member_inner .image-container i.icon:hover{color:#1f7dcf}.grid3 .sc_team_member_inner .sc_team_member_name a{color:#1f7dcf}.grid3 .sc_team_member hr{margin:2px 0 5px!important;border-color:#1f7dcf!important}#sc_our_team_filter ul.filter-list li:hover,#sc_our_team_filter ul.filter-list li.active-filter,.ots-team-view button.ots-search-reset-button:hover,.ots-team-view button.ots-search-button:hover{color:#fff;border-color:#1f7dcf;background-color:#1f7dcf}#sc_our_team_filter ul.filter-list li.active-filter:hover{opacity:1}#sc_our_team_filter ul.filter-list li:hover{opacity:.8}#sc_our_team.grid3 .styled-icons .sc-social{background-color:#1f7dcf;border-radius:3px}</style>
+
+    <!-- Honeycombs -->
+
+    <style>.honeycombs .inner_span{background-color: }.honeycombs .sc_team_member .sc_team_member_jobtitle,.honeycombs .sc_team_member .sc_team_member_name{color:#1f7dcf}</style>
+
+    <!-- Stacked List -->
+
+    <style>.stacked#sc_our_team .smartcat_team_member{border-color:#1f7dcf}</style>
+
+    <!-- Staff Directory -->
+
+    <style>div.dataTables_wrapper table.sc-team-table thead tr{background:#1f7dcf}div.dataTables_wrapper table.sc-team-table thead th{background-color:#1f7dcf}#sc_our_team div.dataTables_wrapper div.dataTables_paginate.paging_simple_numbers a.paginate_button.current{background:#1f7dcf}</style>
+
+<link rel="stylesheet" id="ots-pro-common-css" href="./clir_test_files/A.common.css,qver=4.3.0.pagespeed.cf.zETAuqk1z8.css" type="text/css" media="all">
+<style id="ots-common-css" media="all">.clear{clear:both}.sc-left{float:left;box-sizing:border-box}.width25,.width50,.width75{width:100%;padding:20px 20px 20px 20px}.sc_team_member .sc_team_member_name a{text-decoration:none}.sc_team_single_disabled{cursor:default}.sc-team-member-posts a{font-size:18px}#sc_our_team .sc_team_member .icons a{margin:0 auto 5px auto;text-decoration:none;box-shadow:none;border:none}#sc_our_team .sc_team_member .icons img{display:inline-block;box-shadow:none;border:none;margin:0 2px 0 2px}#sc_our_team .sc_team_member_inner{width:100%;height:100%;overflow:hidden}#sc_our_team .sc_team_member .sc_team_more img{width:50px;height:50px;margin:0 auto 0 auto}#sc_our_team .sc_team_member .sc_team_more a,#sc_our_team .sc_team_member .sc_team_more img{box-shadow:none;border:none}@media (min-width:768px){#sc_our_team.sc-col3 .sc_team_member{width:33.3%}#sc_our_team.sc-col4 .sc_team_member{width:25%}#sc_our_team.sc-col2 .sc_team_member{width:50%}#sc_our_team.sc-col5 .sc_team_member{width:20%}#sc_our_team.sc-col10 .sc_team_member{width:10%}#sc_our_team.sc-col5 .sc_team_member{width:17%;margin:1%}#sc_our_team.sc-col10 .sc_team_member{width:10%}.width25{width:24%;padding:0 15px 0 15px}.width50{width:49%;padding:0 15px 0 15px}.width75{width:73%;padding:0 15px 0 15px}}.sc-hidden-member{opacity:0;width:0;transform:translate(-50px,0);transition:.3s all ease-in-out;-moz-transition:.3s all ease-in-out;-webkit-transition:.3s all ease-in-out}.sc-reveal-member{transform:translate(-50px,0);-moz-transform:translate(-50px,0);-webkit-transform:translate(-50px,0)}</style>
+<style id="contact-form-7-css" media="all">div.wpcf7{margin:0;padding:0}div.wpcf7 .screen-reader-response{position:absolute;overflow:hidden;clip:rect(1px,1px,1px,1px);height:1px;width:1px;margin:0;padding:0;border:0}div.wpcf7-response-output{margin:2em .5em 1em;padding:.2em 1em;border:2px solid red}div.wpcf7-mail-sent-ok{border:2px solid #398f14}div.wpcf7-mail-sent-ng,div.wpcf7-aborted{border:2px solid red}div.wpcf7-spam-blocked{border:2px solid #ffa500}div.wpcf7-validation-errors,div.wpcf7-acceptance-missing{border:2px solid #f7e700}.wpcf7-form-control-wrap{position:relative}span.wpcf7-not-valid-tip{color:red;font-size:1em;font-weight:normal;display:block}.use-floating-validation-tip span.wpcf7-not-valid-tip{position:absolute;top:20%;left:20%;z-index:100;border:1px solid red;background:#fff;padding:.2em .8em}span.wpcf7-list-item{display:inline-block;margin:0 0 0 1em}span.wpcf7-list-item-label::before,span.wpcf7-list-item-label::after{content:" "}.wpcf7-display-none{display:none}div.wpcf7 .ajax-loader{visibility:hidden;display:inline-block;background-image:url(wp-content/plugins/contact-form-7/images/ajax-loader.gif);width:16px;height:16px;border:none;padding:0;margin:0 0 0 4px;vertical-align:middle}div.wpcf7 .ajax-loader.is-active{visibility:visible}div.wpcf7 div.ajax-error{display:none}div.wpcf7 .placeheld{color:#888}div.wpcf7 .wpcf7-recaptcha iframe{margin-bottom:0}div.wpcf7 input[type="file"]{cursor:pointer}div.wpcf7 input[type="file"]:disabled{cursor:default}div.wpcf7 .wpcf7-submit:disabled{cursor:not-allowed}</style>
+<style id="wpa-style-css" media="all">.wpa-hide-rtl#skiplinks a,.wpa-hide-rtl#skiplinks a:hover,.wpa-hide-rtl#skiplinks a:visited{position:absolute!important;right:-999em}.wpa-hide-ltr#skiplinks a,.wpa-hide-ltr#skiplinks a:hover,.wpa-hide-ltr#skiplinks a:visited{position:absolute!important;left:-999em}.wpa-hide#skiplinks a:active,.wpa-hide#skiplinks a:focus{position:absolute}.wpa-ld{display:inline-block;position:relative}div.alignleft{float:left}div.alignright{float:right}div.aligncenter{display:block;margin:0 auto}.wpa-ld a,.wpa-ld button{bottom:2px;left:2px;position:absolute;line-height:1;min-width:1em}.wpa-ld img{display:block}.wpa-ld button,.wpa-ld button:active,.wpa-ld button:focus,.wpa-ld button:hover{border:1px solid #777;border-radius:2px;z-index:10}.wpa-ld .longdesc{position:absolute;width:100%;height:100%;top:0;overflow-y:scroll;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;background:rgba(255,255,255,.95);padding:1.5em}.wpa-ld button,.wpa-ld button:active,.wpa-ld button:focus,.wpa-ld button:hover,.wpa-ld a{font-size:.9em;font-weight:400;background:rgba(255,255,255,.7)!important;padding:0;color:#000!important;text-shadow:1px 1px #ccc}.wpa-ld button:before{content:'i';font-style:italic;font-family:serif}.wpa-ld button:focus,.wpa-ld button:hover{background:rgba(0,0,0,.75)!important;color:#fff!important;border:1px solid #000!important;cursor:pointer}.wpa-ld button:focus{padding:6px}.wpa-ld button span,.longdesc-link span{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(1px 1px 1px 1px);clip:rect(1px,1px,1px,1px)}.template-longdesc{text-align:left;line-height:1.5;width:100%;max-width:50em;padding:2em;margin:1em auto;background:#fdfdfd;color:#333;box-shadow:0 0 5px;font-size:1.4em}label.wpa-screen-reader-text{position:absolute!important;clip:rect(1px,1px,1px,1px);overflow:hidden;color:#000;background:#fff;width:1px;height:1px}</style>
+<link rel="stylesheet" id="rs-plugin-settings-css" href="./clir_test_files/A.settings.css,qver=5.4.8.pagespeed.cf.6Gv8vsHRp3.css" type="text/css" media="all">
+<style id="rs-plugin-settings-inline-css" type="text/css">#rs-demo-id{}.tp-caption.News-Title,.News-Title{color:rgba(255,255,255,1.00);font-size:70px;line-height:60px;font-weight:400;font-style:normal;font-family:Roboto Slab;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.News-Subtitle,.News-Subtitle{color:rgba(255,255,255,1.00);font-size:15px;line-height:24px;font-weight:300;font-style:normal;font-family:Roboto Slab;text-decoration:none;background-color:rgba(255,255,255,0);border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.News-Subtitle:hover,.News-Subtitle:hover{color:rgba(255,255,255,0.65);text-decoration:none;background-color:rgba(255,255,255,0);border-color:transparent;border-style:solid;border-width:0px;border-radius:0 0 0px 0}	#rev_slider_2_1_wrapper .tp-loader.spinner3 div { background-color: #FFFFFF !important; } .hermes.tp-bullets {
+}
+
+.hermes .tp-bullet {
+    overflow:hidden;
+    border-radius:50%;
+    width:16px;
+    height:16px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    position:absolute;
+}
+
+.hermes .tp-bullet:hover {
+	  background-color: rgba(0,0,0,0.21);
+}
+.hermes .tp-bullet:after {
+  content: ' ';
+  position: absolute;
+  bottom: 0;
+  height: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 1px rgb(255, 255, 255);
+  -webkit-transition: height 0.3s ease;
+  transition: height 0.3s ease;
+}
+.hermes .tp-bullet.selected:after {
+  height:100%;
+}
+
+</style>
+<link rel="stylesheet" id="wpml-legacy-dropdown-0-css" href="./clir_test_files/style.css" type="text/css" media="all">
+<style id="wpml-legacy-dropdown-0-inline-css" type="text/css">.wpml-ls-statics-shortcode_actions{background-color:#eee}.wpml-ls-statics-shortcode_actions,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu,.wpml-ls-statics-shortcode_actions a{border-color:#cdcdcd}.wpml-ls-statics-shortcode_actions a{color:#444;background-color:#fff}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus{color:#000;background-color:#eee}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a{color:#444;background-color:#fff}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a,.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus{color:#000;background-color:#eee}</style>
+<link rel="stylesheet" id="wpml-menu-item-0-css" href="./clir_test_files/style(1).css" type="text/css" media="all">
+<style id="ez-icomoon-css" media="all">@font-face{font-family:ez-toc-icomoon;src:url(wp-content/plugins/easy-table-of-contents/vendor/icomoon/fonts/ez-toc-icomoon.eot?-5j7dhv);src:url(wp-content/plugins/easy-table-of-contents/vendor/icomoon/fonts/ez-toc-icomoon.eot?#iefix-5j7dhv) format('embedded-opentype'),url(wp-content/plugins/easy-table-of-contents/vendor/icomoon/fonts/ez-toc-icomoon.ttf?-5j7dhv) format('truetype'),url(wp-content/plugins/easy-table-of-contents/vendor/icomoon/fonts/ez-toc-icomoon.woff?-5j7dhv) format('woff'),url(wp-content/plugins/easy-table-of-contents/vendor/icomoon/fonts/ez-toc-icomoon.svg?-5j7dhv#ez-toc-icomoon) format('svg');font-weight:400;font-style:normal}
+</style>
+<link rel="stylesheet" id="ez-toc-css" href="./clir_test_files/screen.min.css,qver=1.7.pagespeed.ce.PAbk6JCYna.css" type="text/css" media="all">
+<style id="ez-toc-inline-css" type="text/css">div#ez-toc-container p.ez-toc-title{font-size:120%}div#ez-toc-container p.ez-toc-title{font-weight:500}div#ez-toc-container ul li{font-size:95%}</style>
+<style id="ots-widget-css" media="all">.widget#sc_our_team .sc_sidebar_team_member{width:100%;overflow:hidden;margin:0 0 10px 0}.widget#sc_our_team .sc_sidebar_team_member .wp-post-image{float:left;width:25%;border:1px solid #d0d0d0;padding:3px 3px 3px 3px;box-sizing:border-box;margin:0 0 0 0}.widget#sc_our_team .sc_sidebar_team_member .sc_team_member_overlay{float:left;width:75%;padding:0 0 0 10px;box-sizing:border-box}.widget#sc_our_team .sc_sidebar_team_member .sc_team_member_overlay .sc_team_member_name{font-weight:bold}</style>
+<link rel="stylesheet" id="parent-style-css" href="./clir_test_files/A.style.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.iv5AO-ZjnF.css" type="text/css" media="all">
+<link rel="stylesheet" id="clir-logo-fonts-css" href="./clir_test_files/style.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="clir-fonts-css" href="./clir_test_files/stylesheet.min.css" type="text/css" media="all">
+<link rel="stylesheet" id="alchem-google-fonts-Lato-Cabin-Condensed-css" href="./clir_test_files/css" type="text/css" media="">
+<link rel="stylesheet" id="alchem-Open-Sans-css" href="./clir_test_files/css(1)" type="text/css" media="">
+<link rel="stylesheet" id="bootstrap-css" href="./clir_test_files/A.bootstrap.min.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.7qDaAYp5mZ.css" type="text/css" media="">
+<link rel="stylesheet" id="font-awesome-css" href="./clir_test_files/A.font-awesome.min.css,qver=4.3.0.pagespeed.cf.iIGKnvKx_M.css" type="text/css" media="">
+<link rel="stylesheet" id="animate-css" href="./clir_test_files/A.animate.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.EA3w4v165n.css" type="text/css" media="">
+<link rel="stylesheet" id="prettyPhoto-css" href="./clir_test_files/A.prettyPhoto.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.hFitlwYtZ2.css" type="text/css" media="">
+<link rel="stylesheet" id="owl.carousel-css" href="./clir_test_files/A.owl.carousel.css,qver=2.2.0.pagespeed.cf.SoLgB7rVoI.css" type="text/css" media="">
+<link rel="stylesheet" id="magee-shortcode-css" href="./clir_test_files/A.shortcode.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.yfp2TfXG3i.css" type="text/css" media="">
+<link rel="stylesheet" id="alchem-woocommerce-css" href="./clir_test_files/A.woo.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.S9g3NRCI0e.css" type="text/css" media="">
+<link rel="stylesheet" id="alchem-custom-css" href="./clir_test_files/A.custom.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.-lGIBIByJK.css" type="text/css" media="">
+<link rel="stylesheet" id="alchem-customize-css" href="./clir_test_files/A.customize.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.guDupX8GXa.css" type="text/css" media="">
+<style id="alchem-style-css" media="all">@import url(wp-content/themes/clir_theme/stylesheets/main.css);</style>
+<style id="alchem-style-inline-css" type="text/css">body{font-size:16px}#menu-main>li>a>span{font-size:14px}#menu-main li li a span{font-size:14px}.breadcrumb-nav span,.breadcrumb-nav a{font-size:14px}.widget-area .widget-title{font-size:16px}.footer-widget-area .widget-title{font-size:16px}h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}.site-tagline{font-size:14px}.entry-meta li,.entry-meta li a,.entry-meta span{font-size:14px}.page-title h1{font-size:30px}.page-title h3{font-size:14px}.post-pagination li a,.post-pagination li span{font-size:14px}@media (min-width:1200px){.container{width:1170px}}.top-bar{background-color:#9a1c46}.top-bar ul li a{color:#fff}.site-name,.site-tagline{display:none}footer .footer-info-area{background-color:#666}.fxd-header .site-nav>ul>li a{color:#333}.page-title-bar h1,.page-title-bar a,.page-title-bar span{color:#fff!important}.post-inner,.page-inner{padding-top:55px}.post-inner,.page-inner{padding-bottom:40px}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{margin-top:0}.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{margin-bottom:20px}@media (min-width:920px){.main-header .site-nav>ul>li>a{padding-top:0}.main-header .site-nav>ul>li>a{padding-bottom:0}}.fxd-header{background-color:rgba(255,255,255,.7)}.fxd-header .site-nav>ul>li>a{font-size:14px}.site-nav li ul{width:250px}@media screen and (min-width:919px){.main-header .site-nav>ul>li>a{line-height:70px}.site-nav>ul>li a{border-bottom:2px solid transparent}}@media screen and (max-width:919px){.site-nav-toggle{display:block}.site-nav{display:none;width:100%;margin-top:0;background-color:#fff}.site-nav>ul>li{float:none;overflow:hidden}.site-nav>ul>li+li{margin-left:0}.site-nav>ul>li a{line-height:50px}.site-nav>ul>li i{line-height:50px}.site-nav li>ul{position:static;margin-left:20px;z-index:999;width:auto;background-color:transparent}.site-nav li ul li>a{color:#555}.site-nav li ul li:hover>a{color:#19cbcf}.search-form{display:none;margin:25px 0 15px}header{min-height:65px}.site-logo{height:50px}.site-name{margin:0;font-size:24px;font-weight:normal}}.page-title-bar{background-image:url(https://clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/Mosaic-2-small-dark.png);-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover;background-repeat:}.page-title-bar{padding-top:60px;padding-bottom:60px}@media (min-width:992px){.left-aside .col-main,.right-aside .col-main{width:75%}.left-aside .col-main{left:25%}.left-aside .col-aside-left{right:75%}.left-aside .col-aside-left,.right-aside .col-aside-right{width:25%}.both-aside .col-main{width:60%}.both-aside .col-aside-left{width:20%}.both-aside .col-aside-left{right:60%}.both-aside .col-aside-right{width:20%}.both-aside .col-main{left:20%}.both-aside .col-aside-right{width:20%}}.footer-widget-area{padding-top:60px;padding-bottom:40px}.footer-info-area{padding-top:40px;padding-bottom:40px}.footer-sns i{color:#c5c7c9}.footer-sns a{border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}.carousel-caption,.carousel-caption p{color:#333}.carousel-caption h1,.carousel-caption h2,.carousel-caption h3,.carousel-caption h4,.carousel-caption h5,.carousel-caption h6{color:#333}.carousel-caption p{font-size:14px}.carousel-caption p{text-align:left}#alchem-home-sections .alchem-home-section-0{background-color:;background-image:url(https://demo.mageewp.com/alchem/wp-content/uploads/sites/21/2015/08/banner-1.jpg);padding-top:0;padding-bottom:0}#alchem-home-sections .alchem-home-section-0,.alchem-home-section-0 p,.alchem-home-section-0 span,.alchem-home-section-0 h1,.alchem-home-section-0 h2,.alchem-home-section-0 div,.alchem-home-section-0 li,.alchem-home-section-0 i{color:#fff}#alchem-home-sections .alchem-home-section-0 a.magee-btn-normal{color:#fff;border-color:#fff}#alchem-home-sections .alchem-home-section-0 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-0 .owl-theme .owl-dots .owl-dot:hover{background-color:#fff}#alchem-home-sections .alchem-home-section-0 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid #fff}#alchem-home-sections .alchem-home-section-1{background-color:#f5f5f5;background-image:url();padding-top:20px;padding-bottom:20px}#alchem-home-sections .alchem-home-section-1,.alchem-home-section-1 p,.alchem-home-section-1 span,.alchem-home-section-1 h1,.alchem-home-section-1 h2,.alchem-home-section-1 div,.alchem-home-section-1 li,.alchem-home-section-1 i{color:}#alchem-home-sections .alchem-home-section-1 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-1 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-1 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-1 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#alchem-home-sections .alchem-home-section-2{background-color:#e5e5e5;background-image:url();padding-top:50px;padding-bottom:50px}#alchem-home-sections .alchem-home-section-2,.alchem-home-section-2 p,.alchem-home-section-2 span,.alchem-home-section-2 h1,.alchem-home-section-2 h2,.alchem-home-section-2 div,.alchem-home-section-2 li,.alchem-home-section-2 i{color:}#alchem-home-sections .alchem-home-section-2 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-2 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-2 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-2 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#alchem-home-sections .alchem-home-section-3{background-color:#f3f3f4;background-image:url();padding-top:50px;padding-bottom:50px}#alchem-home-sections .alchem-home-section-3,.alchem-home-section-3 p,.alchem-home-section-3 span,.alchem-home-section-3 h1,.alchem-home-section-3 h2,.alchem-home-section-3 div,.alchem-home-section-3 li,.alchem-home-section-3 i{color:}#alchem-home-sections .alchem-home-section-3 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-3 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-3 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-3 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#alchem-home-sections .alchem-home-section-4{background-color:;background-image:url();padding-top:60px;padding-bottom:50px}#alchem-home-sections .alchem-home-section-4,.alchem-home-section-4 p,.alchem-home-section-4 span,.alchem-home-section-4 h1,.alchem-home-section-4 h2,.alchem-home-section-4 div,.alchem-home-section-4 li,.alchem-home-section-4 i{color:}#alchem-home-sections .alchem-home-section-4 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-4 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-4 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-4 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#alchem-home-sections .alchem-home-section-8{background-color:;background-image:url();padding-top:50px;padding-bottom:50px}#alchem-home-sections .alchem-home-section-8,.alchem-home-section-8 p,.alchem-home-section-8 span,.alchem-home-section-8 h1,.alchem-home-section-8 h2,.alchem-home-section-8 div,.alchem-home-section-8 li,.alchem-home-section-8 i{color:}#alchem-home-sections .alchem-home-section-8 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-8 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-8 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-8 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#alchem-home-sections .alchem-home-section-15{background-color:;background-image:url();padding-top:;padding-bottom:}#alchem-home-sections .alchem-home-section-15,.alchem-home-section-15 p,.alchem-home-section-15 span,.alchem-home-section-15 h1,.alchem-home-section-15 h2,.alchem-home-section-15 div,.alchem-home-section-15 li,.alchem-home-section-15 i{color:}#alchem-home-sections .alchem-home-section-15 a.magee-btn-normal{color:;border-color: }#alchem-home-sections .alchem-home-section-15 .owl-theme .owl-dots .owl-dot.active,#alchem-home-sections .alchem-home-section-15 .owl-theme .owl-dots .owl-dot:hover{background-color:}#alchem-home-sections .alchem-home-section-15 .home-banner-slider .owl-theme .owl-dots .owl-dot{border:2px solid}#custom{}</style>
+<link rel="stylesheet" id="alchem-scheme" href="./clir_test_files/A.scheme.less,qver=0.0.4.pagespeed.cf.Ulx77FqZ8_.css" type="text/less" media=""><style type="text/css" id="less:wp-content-themes-alchem-pro-css-A:scheme:less-qver-0:0:4:pagespeed:cf:Ulx77FqZ8_">.text-primary {
+  color: #9a1c46;
+}
+.text-muted {
+  color: #777;
+}
+.text-light {
+  color: #fff;
+}
+a:active,
+a:hover {
+  color: #9a1c46;
+}
+h1 strong,
+h2 strong,
+h3 strong,
+h4 strong,
+h5 strong,
+h6 strong {
+  color: #9a1c46;
+}
+mark,
+ins {
+  background: #9a1c46;
+}
+::selection {
+  background: #9a1c46;
+}
+::-moz-selection {
+  background: #9a1c46;
+}
+.site-nav > ul > li.current > a {
+  color: #9a1c46;
+}
+@media screen and (min-width: 920px) {
+  .site-nav > ul > li:hover > a {
+    border-color: #9a1c46;
+  }
+  .overlay .main-header .site-nav > ul > li:hover > a {
+    border-color: #fff;
+  }
+  .side-header .site-nav > ul > li:hover > a {
+    border-right-color: #9a1c46;
+  }
+  .side-header-right .site-nav > ul > li:hover > a {
+    border-left-color: #9a1c46;
+  }
+}
+.blog-list-wrap .entry-header:after {
+  background-color: #9a1c46;
+}
+.entry-meta a:hover {
+  color: #9a1c46;
+}
+.entry-footer li a:hover {
+  border-color: #9a1c46;
+}
+.post-attributes h3:after {
+  background-color: #9a1c46;
+}
+.post-pagination li a:hover {
+  border-color: #9a1c46;
+  color: #9a1c46;
+}
+.form-control:focus,
+select:focus,
+input:focus,
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="subject"]:focus input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: inherit;
+}
+a .entry-title:hover {
+  color: #9a1c46;
+}
+.widget-title:after {
+  background-color: #9a1c46;
+}
+.widget_nav_menu li.current-menu-item a {
+  border-right-color: #9a1c46;
+}
+.primary-color,
+.text-primary {
+  color: #9a1c46;
+}
+.magee-dropcap {
+  color: #9a1c46;
+}
+.primary-background,
+.dropcap-boxed {
+  background-color: #9a1c46;
+  color: #fff;
+}
+.magee-highlight {
+  background-color: #9a1c46;
+}
+.btn-normal,
+a.btn-normal,
+.magee-btn-normal,
+a.magee-btn-normal,
+.comment-reply-link,
+.form-submit .submit {
+  background-color: #9a1c46;
+  color: #fff;
+}
+.btn-normal:hover,
+.magee-btn-normal:hover,
+.comment-reply-link:hover,
+.form-submit .submit:hover,
+.btn-normal:active,
+.magee-btn-normal:active,
+.comment-reply-link:active,
+.form-submit .submit:active,
+.btn-normal:focus,
+.magee-btn-normal:focus,
+.comment-reply-link:focus,
+.form-submit .submit:focus {
+  background-color: #84183c;
+  color: #fff;
+}
+.magee-btn-normal.btn-line {
+  background-color: transparent;
+  color: #9a1c46;
+  border-color: #9a1c46;
+}
+.magee-btn-normal.btn-line:hover,
+.magee-btn-normal.btn-line:active,
+.magee-btn-normal.btn-line:focus {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.magee-btn-normal.btn-3d {
+  box-shadow: 0 3px 0 0 #6f1432;
+}
+.icon-box.primary {
+  color: #9a1c46;
+}
+.portfolio-list-filter li a:hover,
+.portfolio-list-filter li.active a,
+.portfolio-list-filter li span.active a {
+  background-color: #9a1c46;
+  color: #fff;
+}
+.magee-tab-box.tab-line ul > li.active > a {
+  border-bottom-color: #9a1c46;
+}
+.panel-primary {
+  border-color: #9a1c46;
+}
+.panel-primary .panel-heading {
+  background-color: #9a1c46;
+}
+.pricing-top-icon {
+  color: #9a1c46;
+}
+.magee-pricing-box.featured .panel-heading {
+  background-color: #9a1c46;
+}
+.pricing-tag .currency {
+  color: #9a1c46;
+}
+.pricing-tag .price {
+  color: #9a1c46;
+}
+.pricing-box-flat.featured {
+  background-color: #9a1c46;
+  color: #fff;
+}
+.person-vcard .person-title:after {
+  background-color: #9a1c46;
+}
+.person-social li a:hover {
+  color: #9a1c46;
+}
+.person-social.boxed li a:hover {
+  color: #fff;
+  background-color: #9a1c46;
+}
+.magee-progress-box .progress-bar {
+  background-color: #9a1c46;
+}
+.counter-top-icon {
+  color: #9a1c46;
+}
+.counter:after {
+  background-color: #9a1c46;
+}
+.timeline-year {
+  background-color: #9a1c46;
+}
+.timeline-year:after {
+  border-top-color: #9a1c46;
+}
+@media (min-width: 992px) {
+  .magee-timeline:before {
+    background-color: #9a1c46;
+  }
+  .magee-timeline > ul > li:before {
+    background-color: #9a1c46;
+  }
+  .magee-timeline > ul > li:last-child:before {
+    background-image: -moz-linear-gradient(left, #9a1c46 0%, #9a1c46 70%, #fff 100%);
+    background-image: -webkit-gradient(linear, left top, right top, from(#9a1c46), color-stop(0.7, #9a1c46), to(#fff));
+    background-image: -webkit-linear-gradient(left, #9a1c46 0%, #9a1c46 70%, #fff 100%);
+    background-image: -o-linear-gradient(left, #9a1c46 0%, #9a1c46 70%, #fff 100%);
+  }
+}
+.icon-list-primary li i {
+  color: #9a1c46;
+}
+.icon-list-primary.icon-list-circle li i {
+  background-color: #9a1c46;
+  color: #fff;
+}
+.divider-border .divider-inner.primary {
+  border-color: #9a1c46;
+}
+.img-box .img-overlay.primary {
+  background-color: rgba(154, 28, 70, 0.7);
+}
+.img-box .img-overlay-icons i {
+  background-color: #9a1c46;
+}
+.portfolio-img-box {
+  background-color: #9a1c46;
+}
+.tooltip-text {
+  color: #9a1c46;
+}
+.woocommerce #respond input#submit,
+.woocommerce a.button,
+.woocommerce button.button,
+.woocommerce input.button,
+.woocommerce #respond input#submit.alt,
+.woocommerce a.button.alt,
+.woocommerce button.button.alt,
+.woocommerce input.button.alt {
+  background-color: #9a1c46;
+}
+.woocommerce #respond input#submit:hover,
+.woocommerce a.button:hover,
+.woocommerce button.button:hover,
+.woocommerce input.button:hover,
+.woocommerce #respond input#submit.alt:hover,
+.woocommerce a.button.alt:hover,
+.woocommerce button.button.alt:hover,
+.woocommerce input.button.alt:hover {
+  background-color: #9a1c46;
+}
+.magee-feature-box.style4.primary-background {
+  background-color: #9a1c46;
+  color: #fff;
+}
+</style>
+<link rel="stylesheet" id="jquery.mb.YTPlayer-css" href="./clir_test_files/A.jquery.mb.YTPlayer.min.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.GS9cKj8pCk.css" type="text/css" media="1">
+<style id="owl.theme-css" media="">.owl-theme .owl-controls{margin-top:10px;text-align:center}.owl-theme .owl-controls .owl-buttons div{color:#fff;display:inline-block;zoom:1;*display: inline;margin:5px;padding:3px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px;background:#869791;filter: Alpha(Opacity=50);opacity:.5}.owl-theme .owl-controls.clickable .owl-buttons div:hover{filter: Alpha(Opacity=100);opacity:1;text-decoration:none}.owl-theme .owl-controls .owl-page{display:inline-block;zoom:1;*display: inline}.owl-theme .owl-controls .owl-page span{display:block;width:12px;height:12px;margin:5px 7px;filter: Alpha(Opacity=50);opacity:.5;-webkit-border-radius:20px;-moz-border-radius:20px;border-radius:20px;background:#869791}.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span{filter: Alpha(Opacity=100);opacity:1}.owl-theme .owl-controls .owl-page span.owl-numbers{height:auto;width:auto;color:#fff;padding:2px 10px;font-size:12px;-webkit-border-radius:30px;-moz-border-radius:30px;border-radius:30px}.owl-item.loading{min-height:150px;background:url(wp-content/themes/alchem-pro/lib/magee-shortcodes-pro/assets/images/AjaxLoader.gif) no-repeat center center}#owl-demo .item img{display:block;width:100%;height:auto}#owl-demo .item{position:relative}.owl-controls{position:absolute;margin-top:10px;width:100%;text-align:center;bottom:10px}</style>
+<link rel="stylesheet" id="twentytwenty-css" href="./clir_test_files/A.twentytwenty.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.ehhC9UyXf8.css" type="text/css" media="">
+<link rel="stylesheet" id="audioplayer-css" href="./clir_test_files/A.audioplayer.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.nn0tvPw3Kr.css" type="text/css" media="">
+<link rel="stylesheet" id="weather-icons-css" href="./clir_test_files/A.weather-icons.min.css,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.cf.CZSek6KSo4.css" type="text/css" media="">
+<style id="classycountdown-css" media="">.ClassyCountdown-wrapper>div{display:inline-block;position:relative;width:calc(25% - 20px);margin:10px}.ClassyCountdown-wrapper .ClassyCountdown-value{width:100%;line-height:1em;position:absolute;top:50%;text-align:center;left:0;display:block}</style>
+<link rel="stylesheet" id="wpgdprc.css-css" href="./clir_test_files/A.front.css,qver=1531925990.pagespeed.cf.Cu5RxujJrt.css" type="text/css" media="all">
+<style id="wpgdprc.css-inline-css" type="text/css">div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:before{content:'Yes'}div.wpgdprc .wpgdprc-switch .wpgdprc-switch-inner:after{content:'No'}</style>
+<link rel="stylesheet" id="jetpack_css-css" href="./clir_test_files/jetpack.css" type="text/css" media="all">
+<script type="text/javascript" src="./clir_test_files/jquery.js,qver=1.12.4.pagespeed.jm.pPCPAKkkss.js"></script>
+<script src="./clir_test_files/wp-includes,_js,_jquery,_jquery-migrate.min.js,qver==1.4.1+wp-content,_plugins,_sitepress-multilingual-cms,_res,_js,_jquery.cookie.js,qver==4.0.3.pagespeed.jc.TGMbE1QGy2.js"></script><script>eval(mod_pagespeed_mUhmJEi5Tr);</script>
+<script>eval(mod_pagespeed_cR30WFXA01);</script>
+<script type="text/javascript">//<![CDATA[
+var wpml_cookies={"_icl_current_language":{"value":"en","expires":1,"path":"\/"}};var wpml_cookies={"_icl_current_language":{"value":"en","expires":1,"path":"\/"}};
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+jQuery('document').ready(function(){jQuery.each(wpml_cookies,function(cookieName,cookieData){jQuery.cookie(cookieName,cookieData.value,{'expires':cookieData.expires,'path':cookieData.path});});});
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var monsterinsights_frontend={"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls","inbound_paths":"","home_url":"https:\/\/www.clir.org","track_download_as":"event","internal_label":"int","hash_tracking":"false"};
+//]]></script>
+<script type="text/javascript" src="./clir_test_files/frontend.min.js,qver=7.2.0.pagespeed.jm.1nJm3vHeo7.js"></script>
+<script type="text/javascript" src="./clir_test_files/jquery.themepunch.tools.min.js,qver=5.4.8.pagespeed.jm.2BIlm-w4Ka.js"></script>
+<script src="./clir_test_files/plugins,_revslider,_public,_assets,_js,_jquery.themepunch.revolution.min.js,qver==5.4.8+plugins,_revslider-whiteboard-addon,_public,_assets,_js,_revolution.addon.whiteboard.min.js,qver==1.0.6+themes,_clir_theme,_js,_scripts.js,qver==b5d70210c4f2bf1e104.js"></script><script>eval(mod_pagespeed_LPMUig4LnV);</script>
+<script type="text/javascript" src="./clir_test_files/script.js"></script>
+<script>eval(mod_pagespeed_hzxBY_4XL_);</script>
+<script type="text/javascript" src="./clir_test_files/c1ca2c16bc.js"></script>
+<script>eval(mod_pagespeed_aMB7mPipoh);</script>
+<script type="text/javascript" src="./clir_test_files/less.min.js,qver=2.5.1.pagespeed.jm.2cUzZiNcvX.js"></script>
+<script src="./clir_test_files/js,_respond.min.js,qver==2.0.0+js,_jquery.nav.js,qver==3.0.0+lib,_magee-shortcodes-pro,_assets,_js,_jquery.waypoints.js,qver==2.0.5+lib,_magee-shortcodes-pro,_assets,_jquery-countdown,_jquery.countdown.min.js,qver==2.0.4+lib,_magee-shortcodes-pro,_asse.js"></script><script>eval(mod_pagespeed_uNLg1D9XU4);</script>
+<script>eval(mod_pagespeed_kx8JQVpCrB);</script>
+<script>eval(mod_pagespeed_tj1WaCHnzr);</script>
+<script>eval(mod_pagespeed_hqgQGdbRdg);</script>
+<script>eval(mod_pagespeed_E9xPYhrMjz);</script>
+<script>eval(mod_pagespeed_CoPV3$_Ml0);</script>
+<script>eval(mod_pagespeed_UeqQv9OnIR);</script>
+<script>eval(mod_pagespeed_XxPSGYfkki);</script>
+<script src="./clir_test_files/jquery.prettyPhoto.js,qver==3.1.6+jquery.event.move.js,qver==1.3.6+jquery.twentytwenty.js,qver==b5d70210c4f2bf1e1042e162de63e54a+audioplayer.js,qver==b5d70210c4f2bf1e1042e162de63e54a+chart.min.js,qver==2.1.4.pagespeed.jc.oC54905SuN.js"></script><script>eval(mod_pagespeed_oJfxQWYTuY);</script>
+<script>eval(mod_pagespeed_ePgu7Vux3u);</script>
+<script>eval(mod_pagespeed_KSnMIP8T8D);</script>
+<script>eval(mod_pagespeed_zAr8IZGqSm);</script>
+<script>eval(mod_pagespeed_a9rrv0b4Yy);</script>
+<script type="text/javascript" src="./clir_test_files/moment.js,qver=2.12.0.pagespeed.jm.QBo13GVKHB.js"></script>
+<script type="text/javascript" src="./clir_test_files/micromodal.min.js,qver=1531925990.pagespeed.jm.c_Y4oP-Hob.js"></script>
+<link rel="https://api.w.org/" href="https://www.clir.org/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.clir.org/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.clir.org/wp-includes/wlwmanifest.xml">
+
+<link rel="shortlink" href="https://wp.me/P8gSHX-3XO">
+<link rel="alternate" type="application/json+oembed" href="https://www.clir.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.clir.org%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://www.clir.org/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.clir.org%2F&amp;format=xml">
+<script src="./clir_test_files/saved_resource" type="text/javascript"></script><meta name="generator" content="WPML ver:4.0.3 stt:1,2;">
+<script type="text/javascript">window._se_plugin_version='8.1.9';</script>
+<!-- Markup (JSON-LD) structured in schema.org ver.4.6.1 START -->
+<!-- Markup (JSON-LD) structured in schema.org END -->
+
+<link rel="dns-prefetch" href="https://v0.wordpress.com/">
+<link rel="dns-prefetch" href="https://i0.wp.com/">
+<link rel="dns-prefetch" href="https://i1.wp.com/">
+<link rel="dns-prefetch" href="https://i2.wp.com/">
+<style type="text/css">img#wpstats{display:none}</style><script type="text/javascript"></script>
+        <style id="emma-emarketing" type="text/css" media="all">#emma-form{max-width:100%}#emma-subscription-form{width:100%}ul#emma-form-elements{list-style-type:none;margin:0;padding:0}ul#emma-form-elements li.emma-form-row{list-style-type:none;width:90%;margin:3px auto;display:block}ul#emma-form-elements .emma-form-label{float:left;width:27%}ul#emma-form-elements .emma-form-input{float:right;width:69%}ul#emma-form-elements .emma-form-row-last{clear:both}ul#emma-form-elements .emma-required{color:#c00}ul#emma-form-elements #emma-form-submit{float:right}ul#emma-form-elements .emma-form-label-required{width:40%}.emma-status-msg{width:90%;margin:0 auto}.emma-error{width:90%;margin:0 auto;color:#c00}#emma-subscription-form .validation-container{display:none!important;position:absolute!important;left:-9000px}#emma-form.x-small{width:200px}#emma-form.small{width:280px}#emma-form.medium{width:300px}#emma-form.large{width:340px}#emma-form.emma-horizontal-layout{width:auto}.emma-horizontal-layout ul#emma-form-elements li.emma-form-row{width:24%;float:left;margin-right:1%}.emma-horizontal-layout ul#emma-form-elements .emma-form-input{width:100%}.emma-horizontal-layout #emma-form-submit{width:100%;padding:0;height:37px}.emma-horizontal-layout ul#emma-form-elements li.emma-form-row-last{margin-right:0;clear:none}.emma-horizontal-layout .emma-form-label,.emma-horizontal-layout .emma-form-label-required{display:none}#emma-form.emma-only-email.emma-horizontal-layout ul#emma-form-elements li.emma-form-row{width:49%}.emma-cf:before,.emma-cf:after{content:" ";display:table}.emma-cf:after{clear:both}.emma-cf{*zoom: 1}ul#emma-form-elements .emma-form-input{border:1px solid #000;color:#000;background-color:#fff}#emma-form input[type="submit"],#emma-form a#emma-form-submit{border:1px solid #e7769b;color:#fff;background-color:#991b45;width: }#emma-form input[type="submit"]:hover, , #emma-form a#emma-form-submit:hover {border:1px solid #991b45;color:#000;background-color:#e7769b}#emma-form.x-small ul#emma-form-elements .emma-form-input,#emma-form.x-small ul#emma-form-elements .emma-form-label{float:left;width:97%}.spinner{background:url(wp-includes/images/spinner.gif.pagespeed.ce.sKPd4zFjfi.gif) #fff center no-repeat;-webkit-background-size:20px 20px;display:none;opacity:1.7;width:20px;height:20px;padding:15px;margin:30px auto 50px;border-radius:4px;box-shadow:0 0 7px rgba(0,0,0,.1)}.emma-status,.emma-alert{width:100%;margin:1em auto;padding:1em 1em 1em 5em;background:#ffebeb;font-size:.8em;font-family:sans-serif;font-style:italic;color:#474747;border-radius:3px;border:thin solid #f7c3c3;position:relative;box-shadow:0 0 6px 0 rgba(0,0,0,.2)}.emma-status{background:#ffebeb;border:thin solid #f7c3c3}.emma-status:before,.emma-alert:before{content:'!';position:absolute;top:.6em;top:13px;left:.5em;left:9px;color:#fff;background:#d02d2d;height:30px;width:30px;text-align:center;font-family: 'Georgia' serif;font-size:1.4em;line-height:1.5em;font-style:normal;border-radius:50%}.emma-status:not(.emma-alert):before {content:'';background:#55b655}.emma-status:not(.emma-alert):after {content:'';border:4px solid #fff;border-top:none;border-left:none;width:11px;height:18px;display:block;position:absolute;top:16px;left:19px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);-ms-transform:rotate(45deg)}.emma-status:not(.emma-alert) {background:#e6fae6;border:thin solid #a6bba6}.recaptcha-popup{position:fixed;z-index:999999;top:0;right:0;bottom:0;left:0;background:rgba(0,0,0,.6)}.recaptcha-popup.hidden{display:none}.recaptcha-popup .inner{position:absolute;top:25vh;left:25vw;width:50vw;background:#fff;border-radius:2px;padding:2em;box-sizing:border-box}.recaptcha-popup .inner p{color:#030303;text-align:center;font-size:1.5vw;font-size:1.25rem}.recaptcha-popup .recaptcha-container>div{margin:0 auto;max-width:100%}@media only screen and (max-width:760px){.recaptcha-popup .inner{width:90vw;left:5vw;padding:2em .5em}.recaptcha-popup .inner p{font-size:1.25rem}}</style>
+
+    <meta name="generator" content="Powered by Slider Revolution 5.4.8 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+<script type="text/javascript">function setREVStartSize(e){try{e.c=jQuery(e.c);var i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if(c)jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})}catch(d){console.log("Failure at Presize of Slider:"+d)}};</script>
+			<style type="text/css" id="wp-custom-css">@media (min-width:992px){.magee-timeline>ul>li:before{top:64px}}</style><link rel="stylesheet" href="./clir_test_files/c1ca2c16bc.css" media="all">
+		</head>
+<body data-rsssl="1" class="home page-template-default page page-id-15240 page-full-width slider-below-header group-blog has-slider" style="">
+    <div class="wrapper ">
+    <div class="top-wrap">
+
+            <header class="header-style-1 header-wrap  logo-left">
+  <style>.top-bar{display:block}</style>
+<div class="top-bar">
+  <div class="container">
+      <div class="top-bar-left">
+        <nav class="top-bar-menu clir-custom-menu">
+          <ul class="list-inline">
+            <li class="menu-item menu-item-type-custom menu-item-object-custom">
+              <a href="https://www.clir.org/">
+                <!-- <i class="icon-clir-logo-square anchor-color bigger"></i> -->
+                <span class="clir-font">CLIR</span>
+              </a>
+            </li>
+              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="https://www.clir.org/fellowships"><span>Fellowships &amp; Grants</span></a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="https://www.diglib.org/"><span>DLF</span></a>
+              </li>
+              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="https://www.clir.org/pubs"><span>Publications</span></a>
+              </li>
+              <li class="hidden-xs menu-item menu-item-type-custom menu-item-object-custom">
+                <a href="https://www.clir.org/about/become-a-sponsor-or-member/">Join</a>
+              </li>
+              <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                 <a class="give" href="https://www.clir.org/give">Give
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      <div class="top-bar-right">
+        <ul class="list-inline hidden-xs">
+          <li class="dropdown high-z">
+            <a href="https://www.clir.org/#" class="dropdown-tottle" data-toggle="dropdown">
+              <i class="icon-clir-logo header-logo-size bigger"></i>
+              CLIR Programs
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right clir-programs-menu" aria-labelled-by="clir-programs" role="menu">
+                <li><a href="https://www.diglib.org/">Digital Library Federation</a></li>
+                <li><a href="https://www.diglib.org/dlf-events/2018forum/">DLF Forum</a></li>
+                <li><a href="https://dlme.clir.org/">Digital Library of the Middle East</a></li>
+                <li><a href="https://www.clir.org/fellowships/hiddencollections">Digitizing Hidden Special Collections and Archives</a></li>
+                <li><a href="https://www.clir.org/recordings-at-risk">Recordings at Risk</a></li>
+                <li><a href="https://www.clir.org/fellowships/mellon">Mellon Fellowships for Dissertation Research</a></li>
+                <li><a href="http://www.leadingchangeinstitute.org/">Leading Change Institute</a></li>
+                <li><a href="https://www.diglib.org/opportunities/e-research-network/">DLF eResearch Network</a></li>
+                <li><a href="https://www.clir.org/fellowships/postdoc">Postdoctoral Fellowship Program</a></li>
+              </ul>
+            </li>
+          </ul>
+      </div>
+  </div>
+  <div class="clear"></div>
+</div><!-- .top_bar -->
+
+
+            <div class="main-header " style="display: none;">
+                <div class="container">
+                    <div class="logo-box">
+                  <a href="https://www.clir.org/">
+                                            <script data-pagespeed-no-defer="">//<![CDATA[
+(function(){for(var g="function"==typeof Object.defineProperties?Object.defineProperty:function(b,c,a){if(a.get||a.set)throw new TypeError("ES3 does not support getters and setters.");b!=Array.prototype&&b!=Object.prototype&&(b[c]=a.value)},h="undefined"!=typeof window&&window===this?this:"undefined"!=typeof global&&null!=global?global:this,k=["String","prototype","repeat"],l=0;l<k.length-1;l++){var m=k[l];m in h||(h[m]={});h=h[m]}var n=k[k.length-1],p=h[n],q=p?p:function(b){var c;if(null==this)throw new TypeError("The 'this' value for String.prototype.repeat must not be null or undefined");c=this+"";if(0>b||1342177279<b)throw new RangeError("Invalid count value");b|=0;for(var a="";b;)if(b&1&&(a+=c),b>>>=1)c+=c;return a};q!=p&&null!=q&&g(h,n,{configurable:!0,writable:!0,value:q});var t=this;function u(b,c){var a=b.split("."),d=t;a[0]in d||!d.execScript||d.execScript("var "+a[0]);for(var e;a.length&&(e=a.shift());)a.length||void 0===c?d[e]?d=d[e]:d=d[e]={}:d[e]=c};function v(b){var c=b.length;if(0<c){for(var a=Array(c),d=0;d<c;d++)a[d]=b[d];return a}return[]};function w(b){var c=window;if(c.addEventListener)c.addEventListener("load",b,!1);else if(c.attachEvent)c.attachEvent("onload",b);else{var a=c.onload;c.onload=function(){b.call(this);a&&a.call(this)}}};var x;function y(b,c,a,d,e){this.h=b;this.j=c;this.l=a;this.f=e;this.g={height:window.innerHeight||document.documentElement.clientHeight||document.body.clientHeight,width:window.innerWidth||document.documentElement.clientWidth||document.body.clientWidth};this.i=d;this.b={};this.a=[];this.c={}}function z(b,c){var a,d,e=c.getAttribute("data-pagespeed-url-hash");if(a=e&&!(e in b.c))if(0>=c.offsetWidth&&0>=c.offsetHeight)a=!1;else{d=c.getBoundingClientRect();var f=document.body;a=d.top+("pageYOffset"in window?window.pageYOffset:(document.documentElement||f.parentNode||f).scrollTop);d=d.left+("pageXOffset"in window?window.pageXOffset:(document.documentElement||f.parentNode||f).scrollLeft);f=a.toString()+","+d;b.b.hasOwnProperty(f)?a=!1:(b.b[f]=!0,a=a<=b.g.height&&d<=b.g.width)}a&&(b.a.push(e),b.c[e]=!0)}y.prototype.checkImageForCriticality=function(b){b.getBoundingClientRect&&z(this,b)};u("pagespeed.CriticalImages.checkImageForCriticality",function(b){x.checkImageForCriticality(b)});u("pagespeed.CriticalImages.checkCriticalImages",function(){A(x)});function A(b){b.b={};for(var c=["IMG","INPUT"],a=[],d=0;d<c.length;++d)a=a.concat(v(document.getElementsByTagName(c[d])));if(a.length&&a[0].getBoundingClientRect){for(d=0;c=a[d];++d)z(b,c);a="oh="+b.l;b.f&&(a+="&n="+b.f);if(c=!!b.a.length)for(a+="&ci="+encodeURIComponent(b.a[0]),d=1;d<b.a.length;++d){var e=","+encodeURIComponent(b.a[d]);131072>=a.length+e.length&&(a+=e)}b.i&&(e="&rd="+encodeURIComponent(JSON.stringify(B())),131072>=a.length+e.length&&(a+=e),c=!0);C=a;if(c){d=b.h;b=b.j;var f;if(window.XMLHttpRequest)f=new XMLHttpRequest;else if(window.ActiveXObject)try{f=new ActiveXObject("Msxml2.XMLHTTP")}catch(r){try{f=new ActiveXObject("Microsoft.XMLHTTP")}catch(D){}}f&&(f.open("POST",d+(-1==d.indexOf("?")?"?":"&")+"url="+encodeURIComponent(b)),f.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),f.send(a))}}}function B(){var b={},c;c=document.getElementsByTagName("IMG");if(!c.length)return{};var a=c[0];if(!("naturalWidth"in a&&"naturalHeight"in a))return{};for(var d=0;a=c[d];++d){var e=a.getAttribute("data-pagespeed-url-hash");e&&(!(e in b)&&0<a.width&&0<a.height&&0<a.naturalWidth&&0<a.naturalHeight||e in b&&a.width>=b[e].o&&a.height>=b[e].m)&&(b[e]={rw:a.width,rh:a.height,ow:a.naturalWidth,oh:a.naturalHeight})}return b}var C="";u("pagespeed.CriticalImages.getBeaconData",function(){return C});u("pagespeed.CriticalImages.Run",function(b,c,a,d,e,f){var r=new y(b,c,a,e,f);x=r;d&&w(function(){window.setTimeout(function(){A(r)},0)})});})();pagespeed.CriticalImages.Run('/mod_pagespeed_beacon','https://www.clir.org/','nXzXivl0t7',true,false,'Cp982i_54hI');
+//]]></script><img class="site-logo normal_logo" alt="CLIR" src="./clir_test_files/clir.png" data-pagespeed-url-hash="3612843065" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0" style="display: none;">
+                               <img src="./clir_test_files/clir.png" alt="CLIR" class="site-logo retina_logo" data-pagespeed-url-hash="3612843065" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0" style="display: inline;">
+                               </a>
+                        <div class="name-box">
+                            <a href="https://www.clir.org/"><h1 class="site-name">CLIR</h1></a>
+                            <span class="site-tagline"></span>
+                        </div>
+                    </div>
+                    <button class="site-nav-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </button>
+                    <nav class="site-nav" role="navigation" style="">
+<ul id="menu-main" class="main-nav"><li id="menu-item-2261" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2261"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/about/"><span class="menu-item-label">About</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li id="menu-item-2262" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2262"><a href="https://www.clir.org/about/presidents-message/"><span class="menu-item-label">President’s Message</span></a></li>
+	<li id="menu-item-2263" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2263"><a href="https://www.clir.org/about/news/"><span class="menu-item-label">News</span></a></li>
+	<li id="menu-item-2265" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2265"><a href="https://www.clir.org/about/staff/"><span class="menu-item-label">Staff</span></a></li>
+	<li id="menu-item-2266" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2266"><a href="https://www.clir.org/about/governance/"><span class="menu-item-label">Governance</span></a></li>
+	<li id="menu-item-2267" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2267"><a href="https://www.clir.org/about/become-a-sponsor-or-member/"><span class="menu-item-label">Become a CLIR Sponsor or DLF Member</span></a></li>
+	<li id="menu-item-2268" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2268"><a href="https://www.clir.org/about/current-sponsors-and-funders/"><span class="menu-item-label">Current Sponsors, Members, and Funders</span></a></li>
+	<li id="menu-item-2270" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2270"><a href="https://www.clir.org/about/history/"><span class="menu-item-label">History</span></a></li>
+	<li id="menu-item-16331" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16331"><a href="https://www.clir.org/about/clir-brandmark/"><span class="menu-item-label">CLIR Brandmark</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2282" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2282"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/pubs/"><span class="menu-item-label">Publications</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li id="menu-item-2283" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2283"><a href="https://www.clir.org/pubs/reports/"><span class="menu-item-label">Reports</span></a></li>
+	<li id="menu-item-2285" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2285"><a href="https://www.clir.org/pubs/issues/"><span class="menu-item-label">CLIR Issues</span></a></li>
+	<li id="menu-item-2286" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2286"><a href="https://www.clir.org/pubs/annual/"><span class="menu-item-label">Annual Report</span></a></li>
+	<li id="menu-item-15494" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15494"><a href="https://www.clir.org/pubs/resources/"><span class="menu-item-label">Other Resources</span></a></li>
+	<li id="menu-item-2288" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2288"><a href="https://www.clir.org/pubs/archives/"><span class="menu-item-label">Archives</span></a></li>
+	<li id="menu-item-2298" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2298"><a href="https://www.clir.org/pubs/ordering-report-prints/"><span class="menu-item-label">Ordering and Customer Service</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2273" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2273"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/initiatives-partnerships/"><span class="menu-item-label">Initiatives &amp; Partnerships</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li id="menu-item-17226" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17226"><a href="https://diglib.org/"><span class="menu-item-label">Digital Library Federation</span></a></li>
+	<li id="menu-item-2274" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2274"><a href="https://www.clir.org/initiatives-partnerships/cios/"><span class="menu-item-label">Chief Information Officers in Liberal Arts Colleges</span></a></li>
+	<li id="menu-item-15147" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15147"><a href="https://www.clir.org/initiatives-partnerships/clir-affiliates/"><span class="menu-item-label">CLIR Affiliates</span></a></li>
+	<li id="menu-item-15173" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15173"><a href="http://dlme.clir.org/"><span class="menu-item-label">Digital Library of the Middle East</span></a></li>
+	<li id="menu-item-4790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4790"><a href="http://www.leadingchangeinstitute.org/"><span class="menu-item-label">Leading Change Institute</span></a></li>
+	<li id="menu-item-16420" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16420"><a href="https://www.clir.org/initiatives-partnerships/ndsr/"><span class="menu-item-label">National Digital Stewardship Residency (NDSR) Assessment</span></a></li>
+	<li id="menu-item-19107" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19107"><a href="https://www.clir.org/initiatives-partnerships/sustaining-public-media/"><span class="menu-item-label">Sustaining Public Media</span></a></li>
+</ul>
+</li>
+<li id="menu-item-2307" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2307"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/fellowships/"><span class="menu-item-label">Fellowships &amp; Grants</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li id="menu-item-15148" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15148"><a href="https://www.clir.org/hiddencollections/"><span class="menu-item-label">Digitizing Hidden Collections</span></a></li>
+	<li id="menu-item-2309" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2309"><a href="https://www.clir.org/fellowships/mellon/"><span class="menu-item-label">Mellon Fellowships for Dissertation Research in Original Sources</span></a></li>
+	<li id="menu-item-2314" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2314"><a href="https://www.clir.org/fellowships/postdoc/"><span class="menu-item-label">Postdoctoral Fellowship Program</span></a></li>
+	<li id="menu-item-15150" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15150"><a href="https://www.clir.org/recordings-at-risk/"><span class="menu-item-label">Recordings at Risk</span></a></li>
+	<li id="menu-item-2321" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2321"><a href="https://www.clir.org/fellowships/rovelstad/"><span class="menu-item-label">Rovelstad Scholarship in International Librarianship</span></a></li>
+</ul>
+</li>
+<li id="menu-item-4804" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4804"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://connect.clir.org/membersuitelogin?ReturnUrl=https://connect.clir.org/home"><span class="menu-item-label">Connect</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li id="menu-item-4805" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4805"><a href="http://connect.clir.org/membersuitelogin?ReturnUrl=https%3a%2f%2fconnect.clir.org%2fcommunities%2fallcommunities"><span class="menu-item-label">Communities</span></a></li>
+	<li id="menu-item-4806" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4806"><a href="http://connect.clir.org/membersuitelogin?ReturnUrl=https%3a%2f%2fconnect.clir.org%2fnetwork%2fmembers"><span class="menu-item-label">Directory</span></a></li>
+	<li id="menu-item-4807" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4807"><a href="https://www.clir.org/category/rethinking/"><span class="menu-item-label">Re:Thinking Blog</span></a></li>
+	<li id="menu-item-4808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4808"><a href="http://connect.clir.org/communities/community-home/digestviewer?ListKey=85bd7d10-8ea9-4ca7-a2b3-c5633253e174&amp;CommunityKey=8478483b-92f5-49e3-9901-ba3a03d0722e"><span class="menu-item-label">Job Connect</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-search-icon"><a href="javascript:;"><i class="fa fa-search site-search-toggle" aria-hidden="true"></i></a><form role="search" class="search-form" action="https://www.clir.org/">
+  <div>
+    <label class="sr-only">Search for:</label>
+      <input type="text" name="s" id="s" value="" placeholder="Search...">
+        <button type="submit">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      <!-- <input type="submit" value=""> -->
+    </div>
+  <input type="hidden" name="lang" value="en"></form>
+</li></ul>                    </nav>
+                </div>
+            </div>
+                                   <!-- sticky header -->
+           <div class="fxd-header logo-left" style="top: 0px; display: block;">
+                <div class="container">
+                    <div class="logo-box text-left">
+                        <a href="https://www.clir.org/">
+
+                                            <img class="site-logo normal_logo" alt="CLIR" src="./clir_test_files/clir.png" data-pagespeed-url-hash="3612843065" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0" style="display: none;">
+
+          <img src="./clir_test_files/clir.png" alt="CLIR" class="site-logo retina_logo" data-pagespeed-url-hash="3612843065" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0" style="display: inline;">
+                               </a>
+                        <div class="name-box">
+                            <a href="https://www.clir.org/"><h1 class="site-name">CLIR</h1></a>
+                            <span class="site-tagline"></span>
+                        </div>
+                    </div>
+                    <button class="site-nav-toggle">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                    </button>
+                    <nav class="site-nav" role="navigation" style="">
+<ul id="menu-main" class="main-nav"><li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2261"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/about/"><span class="menu-item-label">About</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2262"><a href="https://www.clir.org/about/presidents-message/"><span class="menu-item-label">President’s Message</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2263"><a href="https://www.clir.org/about/news/"><span class="menu-item-label">News</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2265"><a href="https://www.clir.org/about/staff/"><span class="menu-item-label">Staff</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2266"><a href="https://www.clir.org/about/governance/"><span class="menu-item-label">Governance</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2267"><a href="https://www.clir.org/about/become-a-sponsor-or-member/"><span class="menu-item-label">Become a CLIR Sponsor or DLF Member</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2268"><a href="https://www.clir.org/about/current-sponsors-and-funders/"><span class="menu-item-label">Current Sponsors, Members, and Funders</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2270"><a href="https://www.clir.org/about/history/"><span class="menu-item-label">History</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16331"><a href="https://www.clir.org/about/clir-brandmark/"><span class="menu-item-label">CLIR Brandmark</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2282"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/pubs/"><span class="menu-item-label">Publications</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2283"><a href="https://www.clir.org/pubs/reports/"><span class="menu-item-label">Reports</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2285"><a href="https://www.clir.org/pubs/issues/"><span class="menu-item-label">CLIR Issues</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2286"><a href="https://www.clir.org/pubs/annual/"><span class="menu-item-label">Annual Report</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15494"><a href="https://www.clir.org/pubs/resources/"><span class="menu-item-label">Other Resources</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2288"><a href="https://www.clir.org/pubs/archives/"><span class="menu-item-label">Archives</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2298"><a href="https://www.clir.org/pubs/ordering-report-prints/"><span class="menu-item-label">Ordering and Customer Service</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2273"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/initiatives-partnerships/"><span class="menu-item-label">Initiatives &amp; Partnerships</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-17226"><a href="https://diglib.org/"><span class="menu-item-label">Digital Library Federation</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2274"><a href="https://www.clir.org/initiatives-partnerships/cios/"><span class="menu-item-label">Chief Information Officers in Liberal Arts Colleges</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15147"><a href="https://www.clir.org/initiatives-partnerships/clir-affiliates/"><span class="menu-item-label">CLIR Affiliates</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15173"><a href="http://dlme.clir.org/"><span class="menu-item-label">Digital Library of the Middle East</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4790"><a href="http://www.leadingchangeinstitute.org/"><span class="menu-item-label">Leading Change Institute</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16420"><a href="https://www.clir.org/initiatives-partnerships/ndsr/"><span class="menu-item-label">National Digital Stewardship Residency (NDSR) Assessment</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19107"><a href="https://www.clir.org/initiatives-partnerships/sustaining-public-media/"><span class="menu-item-label">Sustaining Public Media</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-has-children menu-item-2307"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://www.clir.org/fellowships/"><span class="menu-item-label">Fellowships &amp; Grants</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15148"><a href="https://www.clir.org/hiddencollections/"><span class="menu-item-label">Digitizing Hidden Collections</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2309"><a href="https://www.clir.org/fellowships/mellon/"><span class="menu-item-label">Mellon Fellowships for Dissertation Research in Original Sources</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2314"><a href="https://www.clir.org/fellowships/postdoc/"><span class="menu-item-label">Postdoctoral Fellowship Program</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15150"><a href="https://www.clir.org/recordings-at-risk/"><span class="menu-item-label">Recordings at Risk</span></a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-2321"><a href="https://www.clir.org/fellowships/rovelstad/"><span class="menu-item-label">Rovelstad Scholarship in International Librarianship</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-4804"><i class="fa fa-caret-down menu-dropdown-icon" aria-hidden="true"></i><a href="https://connect.clir.org/membersuitelogin?ReturnUrl=https://connect.clir.org/home"><span class="menu-item-label">Connect</span></a>
+<ul class="sub-menu sub-menu-1" style="">
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4805"><a href="http://connect.clir.org/membersuitelogin?ReturnUrl=https%3a%2f%2fconnect.clir.org%2fcommunities%2fallcommunities"><span class="menu-item-label">Communities</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4806"><a href="http://connect.clir.org/membersuitelogin?ReturnUrl=https%3a%2f%2fconnect.clir.org%2fnetwork%2fmembers"><span class="menu-item-label">Directory</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4807"><a href="https://www.clir.org/category/rethinking/"><span class="menu-item-label">Re:Thinking Blog</span></a></li>
+	<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4808"><a href="http://connect.clir.org/communities/community-home/digestviewer?ListKey=85bd7d10-8ea9-4ca7-a2b3-c5633253e174&amp;CommunityKey=8478483b-92f5-49e3-9901-ba3a03d0722e"><span class="menu-item-label">Job Connect</span></a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-search-icon"><a href="javascript:;"><i class="fa fa-search site-search-toggle" aria-hidden="true"></i></a><form role="search" class="search-form" action="https://www.clir.org/">
+  <div>
+    <label class="sr-only">Search for:</label>
+      <input type="text" name="s" id="s" value="" placeholder="Search...">
+        <button type="submit">
+          <span class="glyphicon glyphicon-search"></span>
+        </button>
+      <!-- <input type="submit" value=""> -->
+    </div>
+  <input type="hidden" name="lang" value="en"></form>
+</li></ul>                    </nav>
+                </div>
+            </div>
+                         <script>jQuery('li.menu_column_2 > ul > li').addClass('col-md-6');jQuery('li.menu_column_3 > ul > li').addClass('col-md-4');jQuery('li.menu_column_4 > ul > li').addClass('col-md-3');jQuery('li.menu_column_5 > ul > li').addClass('col-md-1_5');jQuery('li.menu_column_6 > ul > li').addClass('col-md-2');</script>
+
+            <div class="clear"></div>
+        </header>
+
+<a class="scrollToTop" href="https://www.clir.org/#top" style="opacity: 1;"></a>
+
+         <div class="slider-wrap"><div class="page-top-slider "><link href="./clir_test_files/css(2)" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+<div id="rev_slider_2_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin: 0px auto; background: transparent; padding: 0px; height: 600px; overflow: visible;">
+<!-- START REVOLUTION SLIDER 5.4.8 auto mode -->
+	<div id="rev_slider_2_1" class="rev_slider fullwidthabanner revslider-initialised tp-simpleresponsive rev_redraw_on_blurfocus" style="margin-top: 0px; margin-bottom: 0px; height: 600px;" data-version="5.4.8" data-slideactive="rs-71">
+<ul class="tp-revslider-mainul" style="visibility: visible; display: block; overflow: hidden; width: 1417px; height: 100%; max-height: none; left: 0px;">	<!-- SLIDE  -->
+	<li data-index="rs-71" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="300" data-thumb="https://i2.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/manuscript-1614234_1920.jpg?fit=1920%2C1733&amp;ssl=1" data-rotate="0" data-fstransition="fade" data-fsmasterspeed="1000" data-fsslotamount="7" data-saveperformance="off" data-mediafilter="xpro2" data-title="Mellon Fellows" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli active-revslide" style="width: 100%; height: 100%; overflow: hidden; z-index: 20; visibility: inherit; opacity: 1; background-color: rgba(255, 255, 255, 0);">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; visibility: inherit; opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==" alt="" title="manuscript-1614234_1920" width="1920" height="1733" data-lazyload="https://i2.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/manuscript-1614234_1920.jpg?fit=1920%2C1733&amp;ssl=1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="off" class="rev-slidebg defaultimg" data-no-retina="" data-pagespeed-url-hash="2761032373" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0">--><div class="tp-bgimg defaultimg xpro2" data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://i2.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/manuscript-1614234_1920.jpg?fit=1920%2C1733&amp;ssl=1&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 1; visibility: inherit; z-index: 20;" src="https://i2.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/manuscript-1614234_1920.jpg?fit=1920%2C1733&amp;ssl=1"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 1 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 245px; top: 96px; z-index: 5;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption tp-shape tp-shapewrapper  tp-resizeme" id="slide-71-layer-9" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;156&#39;,&#39;156&#39;,&#39;156&#39;,&#39;156&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;96&#39;,&#39;96&#39;,&#39;96&#39;,&#39;96&#39;]" data-width="681" data-height="174" data-whitespace="nowrap" data-type="shape" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; background-color: rgba(10, 10, 10, 0.73); visibility: inherit; transition: none 0s ease 0s; text-align: inherit; line-height: 28px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-weight: 400; font-size: 16px; white-space: nowrap; min-height: 174px; min-width: 681px; max-height: 174px; max-width: 681px; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;"> </div></div></div></div>
+
+		<!-- LAYER NR. 2 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 262px; top: 119px; z-index: 6;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption   tp-resizeme" id="slide-71-layer-11" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;173&#39;,&#39;173&#39;,&#39;173&#39;,&#39;173&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;119&#39;,&#39;119&#39;,&#39;119&#39;,&#39;119&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 22px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: &quot;Roboto Slab&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">Mellon Fellowships </div></div></div></div>
+
+		<!-- LAYER NR. 3 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 260px; top: 167px; z-index: 7;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption   tp-resizeme" id="slide-71-layer-13" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;171&#39;,&#39;171&#39;,&#39;171&#39;,&#39;171&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;167&#39;,&#39;167&#39;,&#39;167&#39;,&#39;167&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; font-size: 30px; line-height: 22px; font-weight: 400; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: &quot;Roboto Slab&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">For Dissertation Research in Original Sources </div></div></div></div>
+
+		<!-- LAYER NR. 4 -->
+		<div class="tp-parallax-wrap" style="position: absolute; display: block; visibility: visible; left: 265px; top: 224px; z-index: 12;"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position: absolute; display: block; overflow: visible;"><div class="tp-caption   tp-resizeme" id="slide-71-layer-19" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;176&#39;,&#39;176&#39;,&#39;176&#39;,&#39;176&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;224&#39;,&#39;224&#39;,&#39;224&#39;,&#39;224&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:300,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;,&#39;inherit&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 12; white-space: nowrap; font-size: 35px; line-height: 22px; font-weight: 700; color: rgb(255, 255, 255); letter-spacing: 0px; font-family: &quot;Roboto Slab&quot;; visibility: inherit; transition: none 0s ease 0s; text-align: inherit; border-width: 0px; margin: 0px; padding: 0px; min-height: 0px; min-width: 0px; max-height: none; max-width: none; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transform-origin: 50% 50% 0px;">APPLY NOW!
+ </div></div></div></div>
+	</li>
+	<!-- SLIDE  -->
+	<li data-index="rs-55" data-transition="slideoverhorizontal" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1500" data-link="https://connect.clir.org/communities/community-home/digestviewer?CommunityKey=8478483b-92f5-49e3-9901-ba3a03d0722e&amp;tab=digestviewer" data-thumb="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/Jobs.png?fit=1920%2C753&amp;ssl=1" data-rotate="0" data-saveperformance="off" data-title="Jobs" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 1623.5px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==" alt="" title="Jobs" width="1920" height="753" data-lazyload="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/Jobs.png?fit=1920%2C753&amp;ssl=1" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg defaultimg" data-no-retina="" data-pagespeed-url-hash="2761032373" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/Jobs.png?fit=1920%2C753&amp;ssl=1&quot;); background-size: cover; background-position: center center; width: 100%; height: 100%; opacity: 0;" src="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/Jobs.png?fit=1920%2C753&amp;ssl=1"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 5 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption News-Title   tp-resizeme" id="slide-55-layer-1" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;62&#39;,&#39;62&#39;,&#39;40&#39;,&#39;40&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;358&#39;,&#39;358&#39;,&#39;250&#39;,&#39;150&#39;]" data-fontsize="[&#39;60&#39;,&#39;60&#39;,&#39;70&#39;,&#39;70&#39;]" data-lineheight="[&#39;70&#39;,&#39;70&#39;,&#39;60&#39;,&#39;60&#39;]" data-width="[&#39;664&#39;,&#39;664&#39;,&#39;364&#39;,&#39;364&#39;]" data-height="[&#39;150&#39;,&#39;150&#39;,&#39;133&#39;,&#39;133&#39;]" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; min-width: 664px; max-width: 150px; white-space: normal; font-size: 60px; line-height: 70px; visibility: hidden;">Don't miss this week's job listings! </div></div></div></div>
+
+		<!-- LAYER NR. 6 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption   tp-resizeme" id="slide-55-layer-2" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;63&#39;,&#39;63&#39;,&#39;40&#39;,&#39;40&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;512&#39;,&#39;512&#39;,&#39;382&#39;,&#39;282&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; visibility: hidden;"><img src="./clir_test_files/bluebar.png" alt="" data-ww="[&#39;350px&#39;,&#39;350px&#39;,&#39;350px&#39;,&#39;350px&#39;]" data-hh="[&#39;4px&#39;,&#39;4px&#39;,&#39;4px&#39;,&#39;4px&#39;]" width="350" height="4" data-lazyload="https://clir.wordpress.clir.org/wp-content/uploads/sites/6/revslider/highlight-showcase/bluebar.png" data-no-retina="" data-pagespeed-url-hash="2761032373" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0"> </div></div></div></div>
+
+		<!-- LAYER NR. 7 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption News-Subtitle   tp-resizeme" id="slide-55-layer-3" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;67&#39;,&#39;67&#39;,&#39;41&#39;,&#39;41&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;525&#39;,&#39;525&#39;,&#39;401&#39;,&#39;301&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;nothing&quot;},{&quot;frame&quot;:&quot;hover&quot;,&quot;speed&quot;:&quot;300&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;,&quot;to&quot;:&quot;o:1;rX:0;rY:0;rZ:0;z:0;&quot;,&quot;style&quot;:&quot;c:rgba(255,255,255,0.65);br:0 0 0px 0;&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; white-space: nowrap; cursor: pointer; visibility: hidden;">Stay current with Job Connect </div></div></div></div>
+
+		<!-- LAYER NR. 8 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption -   tp-resizeme" id="slide-55-layer-4" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;406&#39;,&#39;406&#39;,&#39;383&#39;,&#39;383&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;524&#39;,&#39;524&#39;,&#39;403&#39;,&#39;303&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(0, 210, 255); visibility: hidden;"><i class="fa-icon-caret-right"></i> </div></div></div></div>
+	<div class="tp-parallax-wrap " style=" width:100% !important;height:100% !important;position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;display:block;;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute;display:block;;"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" id="layer-143509860"><a style="width:100%;height:100%;display:block" target="_self" href="https://connect.clir.org/communities/community-home/digestviewer?CommunityKey=8478483b-92f5-49e3-9901-ba3a03d0722e&amp;tab=digestviewer"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+	<!-- SLIDE  -->
+	<li data-index="rs-73" data-transition="slideoverhorizontal" data-slotamount="7" data-hideafterloop="0" data-hideslideonmobile="off" data-easein="default" data-easeout="default" data-masterspeed="1500" data-link="https://www.diglib.org/groups/" data-thumb="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/connected.png?fit=1225%2C547&amp;ssl=1" data-rotate="0" data-saveperformance="off" data-title="DLF WG" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="" class="tp-revslider-slidesli" style="width: 100%; height: 100%; overflow: hidden;">
+		<!-- MAIN IMAGE -->
+		<div class="slotholder" style="position: absolute; top: 0px; left: 0px; z-index: 0; width: 100%; height: 100%; backface-visibility: hidden; transform: translate3d(0px, 1623.5px, 0px);"><!--Runtime Modification - Img tag is Still Available for SEO Goals in Source - <img src="data:image/webp;base64,UklGRhoAAABXRUJQVlA4TA0AAAAvAAAAEAcQERGIiP4HAA==" alt="dots" title="connected" width="1225" height="547" data-lazyload="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/connected.png?fit=1225%2C547&amp;ssl=1" data-bgposition="center bottom" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg defaultimg" data-no-retina="" data-pagespeed-url-hash="2761032373" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0">--><div class="tp-bgimg defaultimg " data-bgcolor="undefined" style="background-repeat: no-repeat; background-image: url(&quot;https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/connected.png?fit=1225%2C547&amp;ssl=1&quot;); background-size: cover; background-position: center bottom; width: 100%; height: 100%; opacity: 0;" src="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/09/connected.png?fit=1225%2C547&amp;ssl=1"></div></div>
+		<!-- LAYERS -->
+
+		<!-- LAYER NR. 9 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption News-Title   tp-resizeme" id="slide-73-layer-1" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;84&#39;,&#39;84&#39;,&#39;40&#39;,&#39;40&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;49&#39;,&#39;49&#39;,&#39;250&#39;,&#39;150&#39;]" data-fontsize="[&#39;60&#39;,&#39;60&#39;,&#39;70&#39;,&#39;70&#39;]" data-lineheight="[&#39;70&#39;,&#39;70&#39;,&#39;60&#39;,&#39;60&#39;]" data-fontweight="[&#39;700&#39;,&#39;700&#39;,&#39;400&#39;,&#39;400&#39;]" data-color="[&#39;rgb(0,0,0)&#39;,&#39;rgb(0,0,0)&#39;,&#39;rgba(255,255,255,1)&#39;,&#39;rgba(255,255,255,1)&#39;]" data-width="[&#39;891&#39;,&#39;891&#39;,&#39;364&#39;,&#39;364&#39;]" data-height="[&#39;none&#39;,&#39;none&#39;,&#39;133&#39;,&#39;133&#39;]" data-whitespace="normal" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;nothing&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 5; min-width: 891px; max-width: 891px; white-space: normal; font-size: 60px; line-height: 70px; font-weight: 700; color: rgb(0, 0, 0); visibility: hidden;"> Did you know that DLF facilitates 11 Working Groups? </div></div></div></div>
+
+		<!-- LAYER NR. 10 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption   tp-resizeme" id="slide-73-layer-2" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;90&#39;,&#39;90&#39;,&#39;40&#39;,&#39;40&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;199&#39;,&#39;199&#39;,&#39;382&#39;,&#39;282&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="image" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; visibility: hidden;"><img src="./clir_test_files/bluebar.png" alt="" data-ww="" data-hh="" width="350" height="4" data-lazyload="https://clir.wordpress.clir.org/wp-content/uploads/sites/6/revslider/highlight-showcase/bluebar.png" data-no-retina="" data-pagespeed-url-hash="2761032373" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" scale="0"> </div></div></div></div>
+
+		<!-- LAYER NR. 11 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption News-Subtitle   tp-resizeme" id="slide-73-layer-3" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;92&#39;,&#39;81&#39;,&#39;41&#39;,&#39;41&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;221&#39;,&#39;605&#39;,&#39;401&#39;,&#39;301&#39;]" data-fontsize="[&#39;18&#39;,&#39;15&#39;,&#39;15&#39;,&#39;15&#39;]" data-fontweight="[&#39;700&#39;,&#39;300&#39;,&#39;300&#39;,&#39;300&#39;]" data-color="[&#39;rgb(0,0,0)&#39;,&#39;rgba(255,255,255,1)&#39;,&#39;rgba(255,255,255,1)&#39;,&#39;rgba(255,255,255,1)&#39;]" data-width="[&#39;372&#39;,&#39;none&#39;,&#39;none&#39;,&#39;none&#39;]" data-height="[&#39;33&#39;,&#39;none&#39;,&#39;none&#39;,&#39;none&#39;]" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;nothing&quot;},{&quot;frame&quot;:&quot;hover&quot;,&quot;speed&quot;:&quot;300&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;,&quot;to&quot;:&quot;o:1;rX:0;rY:0;rZ:0;z:0;&quot;,&quot;style&quot;:&quot;c:rgba(255,255,255,0.65);br:0 0 0px 0;&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 7; min-width: 372px; max-width: 33px; white-space: nowrap; font-size: 18px; font-weight: 700; color: rgb(0, 0, 0); cursor: pointer; visibility: hidden;">Learn more! </div></div></div></div>
+
+		<!-- LAYER NR. 12 -->
+		<div class="tp-parallax-wrap " style=" position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="position:absolute;display:block;;"><div class="tp-mask-wrap" style="position:absolute;display:block;;"><div class="tp-caption -   tp-resizeme" id="slide-73-layer-4" data-x="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-hoffset="[&#39;429&#39;,&#39;429&#39;,&#39;383&#39;,&#39;383&#39;]" data-y="[&#39;top&#39;,&#39;top&#39;,&#39;top&#39;,&#39;top&#39;]" data-voffset="[&#39;261&#39;,&#39;261&#39;,&#39;403&#39;,&#39;303&#39;]" data-width="none" data-height="none" data-whitespace="nowrap" data-type="text" data-responsive_offset="on" data-frames="[{&quot;delay&quot;:500,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1000,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;x:[100%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" data-textalign="[&#39;left&#39;,&#39;left&#39;,&#39;left&#39;,&#39;left&#39;]" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 8; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgb(0, 210, 255); visibility: hidden;"><i class="fa-icon-caret-right"></i> </div></div></div></div>
+	<div class="tp-parallax-wrap " style=" width:100% !important;height:100% !important;position:absolute;display:block;;visibility:hidden"><div class="tp-loop-wrap" style="width:100% !important;height:100% !important;position:absolute;display:block;;"><div class="tp-mask-wrap" style="width:100% !important;height:100% !important;position:absolute;display:block;;"><div class="tp-caption slidelink" style="cursor: pointer; width: 100%; height: 100%; z-index: 60; visibility: hidden;" data-x="center" data-y="center" data-basealign="slide" data-frames="[{&quot;delay&quot;:0,&quot;speed&quot;:100,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:300,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power3.easeInOut&quot;}]" id="layer-167618676"><a style="width:100%;height:100%;display:block" target="_self" href="https://www.diglib.org/groups/"><span style="width:100%;height:100%;display:block"></span></a></div></div></div></div></li>
+</ul>
+<script>var htmlDiv=document.getElementById("rs-plugin-settings-inline-css");var htmlDivCss="";if(htmlDiv){htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;}else{var htmlDiv=document.createElement("div");htmlDiv.innerHTML="<style>"+htmlDivCss+"</style>";document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);}</script>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden; width: 0%;"></div>	<div class="tp-loader spinner3" style="display: none;"><div class="dot1"></div><div class="dot2"></div><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div><div class="tp-bullets hermes horizontal nav-pos-hor-center nav-pos-ver-bottom nav-dir-horizontal" style="width: 58px; height: 16px; top: 100%; transform: matrix(1, 0, 0, 1, -29, -36); left: 50%;"><div class="tp-bullet selected" style="left: 0px; top: 0px;"></div><div class="tp-bullet" style="left: 21px; top: 0px;"></div><div class="tp-bullet" style="left: 42px; top: 0px;"></div></div></div>
+<script>var htmlDiv=document.getElementById("rs-plugin-settings-inline-css");var htmlDivCss=".tp-caption.News-Title,.News-Title{color:rgba(255,255,255,1.00);font-size:70px;line-height:60px;font-weight:400;font-style:normal;font-family:Roboto Slab;text-decoration:none;background-color:transparent;border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.News-Subtitle,.News-Subtitle{color:rgba(255,255,255,1.00);font-size:15px;line-height:24px;font-weight:300;font-style:normal;font-family:Roboto Slab;text-decoration:none;background-color:rgba(255,255,255,0);border-color:transparent;border-style:none;border-width:0px;border-radius:0 0 0 0px}.tp-caption.News-Subtitle:hover,.News-Subtitle:hover{color:rgba(255,255,255,0.65);text-decoration:none;background-color:rgba(255,255,255,0);border-color:transparent;border-style:solid;border-width:0px;border-radius:0 0 0px 0}";if(htmlDiv){htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;}else{var htmlDiv=document.createElement("div");htmlDiv.innerHTML="<style>"+htmlDivCss+"</style>";document.getElementsByTagName("head")[0].appendChild(htmlDiv.childNodes[0]);}</script>
+		<script type="text/javascript">if(setREVStartSize!==undefined)setREVStartSize({c:'#rev_slider_2_1',responsiveLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,450,400,350],sliderLayout:'auto'});var revapi2,tpj;(function(){if(!/loaded|interactive|complete/.test(document.readyState))document.addEventListener("DOMContentLoaded",onLoad);else onLoad();function onLoad(){if(tpj===undefined){tpj=jQuery;if("off"=="on")tpj.noConflict();}if(tpj("#rev_slider_2_1").revolution==undefined){revslider_showDoubleJqueryError("#rev_slider_2_1");}else{revapi2=tpj("#rev_slider_2_1").show().revolution({sliderType:"standard",jsFileLocation:"//www.clir.org/wp-content/plugins/revslider/public/assets/js/",sliderLayout:"auto",dottedOverlay:"none",delay:5000,navigation:{keyboardNavigation:"off",keyboard_direction:"horizontal",mouseScrollNavigation:"off",mouseScrollReverse:"default",onHoverStop:"on",touch:{touchenabled:"on",touchOnDesktop:"off",swipe_threshold:75,swipe_min_touches:1,swipe_direction:"horizontal",drag_block_vertical:false},bullets:{enable:true,hide_onmobile:false,style:"hermes",hide_onleave:false,direction:"horizontal",h_align:"center",v_align:"bottom",h_offset:0,v_offset:20,space:5,tmp:''}},viewPort:{enable:true,outof:"pause",visible_area:"80%",presize:false},responsiveLevels:[1240,1024,778,480],visibilityLevels:[1240,1024,778,480],gridwidth:[1240,1024,778,480],gridheight:[600,450,400,350],lazyType:"smart",parallax:{type:"scroll",origo:"enterpoint",speed:400,speedbg:0,speedls:0,levels:[5,10,15,20,25,30,35,40,45,50,47,48,49,50,51,55],},shadow:0,spinner:"spinner3",stopLoop:"off",stopAfterLoops:-1,stopAtSlide:-1,shuffle:"off",autoHeight:"off",disableProgressBar:"on",hideThumbsOnMobile:"off",hideSliderAtLimit:0,hideCaptionAtLimit:0,hideAllCaptionAtLilmit:0,debugMode:false,fallbacks:{simplifyAll:"off",nextSlideOnWindowFocus:"off",disableFocusListener:false,}});};};}());</script>
+		<script>var htmlDivCss='	#rev_slider_2_1_wrapper .tp-loader.spinner3 div { background-color: #FFFFFF !important; } ';var htmlDiv=document.getElementById('rs-plugin-settings-inline-css');if(htmlDiv){htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;}else{var htmlDiv=document.createElement('div');htmlDiv.innerHTML='<style>'+htmlDivCss+'</style>';document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);}</script>
+					<script>var htmlDivCss=unescape(".hermes.tp-bullets%20%7B%0A%7D%0A%0A.hermes%20.tp-bullet%20%7B%0A%20%20%20%20overflow%3Ahidden%3B%0A%20%20%20%20border-radius%3A50%25%3B%0A%20%20%20%20width%3A16px%3B%0A%20%20%20%20height%3A16px%3B%0A%20%20%20%20background-color%3A%20rgba%280%2C%200%2C%200%2C%200%29%3B%0A%20%20%20%20box-shadow%3A%20inset%200%200%200%202px%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20%20%20-webkit-transition%3A%20background%200.3s%20ease%3B%0A%20%20%20%20transition%3A%20background%200.3s%20ease%3B%0A%20%20%20%20position%3Aabsolute%3B%0A%7D%0A%0A.hermes%20.tp-bullet%3Ahover%20%7B%0A%09%20%20background-color%3A%20rgba%280%2C0%2C0%2C0.21%29%3B%0A%7D%0A.hermes%20.tp-bullet%3Aafter%20%7B%0A%20%20content%3A%20%27%20%27%3B%0A%20%20position%3A%20absolute%3B%0A%20%20bottom%3A%200%3B%0A%20%20height%3A%200%3B%0A%20%20left%3A%200%3B%0A%20%20width%3A%20100%25%3B%0A%20%20background-color%3A%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20box-shadow%3A%200%200%201px%20rgb%28255%2C%20255%2C%20255%29%3B%0A%20%20-webkit-transition%3A%20height%200.3s%20ease%3B%0A%20%20transition%3A%20height%200.3s%20ease%3B%0A%7D%0A.hermes%20.tp-bullet.selected%3Aafter%20%7B%0A%20%20height%3A100%25%3B%0A%7D%0A%0A");var htmlDiv=document.getElementById('rs-plugin-settings-inline-css');if(htmlDiv){htmlDiv.innerHTML=htmlDiv.innerHTML+htmlDivCss;}else{var htmlDiv=document.createElement('div');htmlDiv.innerHTML='<style>'+htmlDivCss+'</style>';document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);}</script>
+				</div><!-- END REVOLUTION SLIDER --></div></div>	</div><div id="post-15240" class="post-15240 page type-page status-publish hentry">
+
+ <div class="post-wrap">
+            <div class="container-fullwidth">
+                <div class="page-inner row no-aside">
+                        <div class="col-main">
+
+
+	<div class="entry-content">
+
+	<style type="text/css" scoped="scoped">.section-5bbe68d199317{background-color:#eee}</style><section class="section magee-section  section-5bbe68d199317" id="about_clir"> <div class="section-content"><div class="container"> CLIR forges strategies to enhance research, teaching, and learning environments in collaboration with libraries, cultural institutions, and communities of higher learning.&nbsp;We foster collaboration by investing in cross-disciplinary intellectual leadership, strategic programs, and professional development opportunities. </div></div> </section> <style type="text/css" scoped="scoped"></style><section class="section magee-section  section-5bbe68d19944b" id="featured_news"> <div class="section-content"><div class="container">
+<div class="col-md-8 col-md-offset-2 dlf-section-heading text-center">
+<h2>News</h2>
+<div class=" divider divider-title divider-border center"></div>
+<p class="dlf-sub">The latest news from CLIR</p>
+</div>
+<div style="height: 60px;"></div>
+<div class="row"><div class="row">        <div class="col-md-4"><a href="https://www.clir.org/2018/09/clir-awards-rar-4/" title="CLIR Awards $546,281 for Recordings at Risk" class="related-post" style="background-image:url(https://i2.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/09/RaR-feature.jpg?fit=320%2C233&amp;ssl=1)"><span class="related-post-title">CLIR Awards $546,281 for Recordings at Risk</span></a></div>        <div class="col-md-4"><a href="https://www.clir.org/2018/09/clir-receives-grant-for-data-curation-fellowships-in-african-american-and-african-studies/" title="CLIR Receives $2.75 Million Mellon Foundation Grant for Data Curation Fellowships in African American and African Studies" class="related-post" style="background-image:url(https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/09/Girlbook-600w.jpg?fit=333%2C233&amp;ssl=1)"><span class="related-post-title">CLIR Receives $2.75 Million Mellon Foundation Grant for Data Curation Fellowships in African American and African Studies</span></a></div>        <div class="col-md-4"><a href="https://www.clir.org/2018/09/dlf-names-futures-fellows/" title="Digital Library Federation Names Three New “DLF Futures Fellows”" class="related-post" style="background-image:url(https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/09/Trio-Futures-FEATURE.png?fit=350%2C212&amp;ssl=1)"><span class="related-post-title">Digital Library Federation Names Three New “DLF Futures Fellows”</span></a></div></div></div>
+<div class="clearfix visible-sm-block"></div>
+<div class="dlf-spacer dlf-spacer-sm"></div>
+<div class="col-md-4 col-md-offset-4 text-center"><a class="btn btn-clir" href="https://www.clir.org/about/news/">Read More</a></div>
+</div></div> </section>
+<style type="text/css" scoped="scoped">.section-5bbe68d1a4fa2{background-color:#f1f0eb}</style><section class="section magee-section  section-5bbe68d1a4fa2" id="program_spotlight"> <div class="section-content"><div class="container-fullwidth">
+<div id="dlf-products" class="container">
+<div class="col-md-8 col-md-offset-2 dlf-section-heading text-center">
+<h2>Program Spotlight</h2>
+<div class=" divider divider-title divider-border center"></div>
+<p class="dlf-sub">
+</p></div>
+  <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+      <a href="https://www.clir.org/2017/11/clir-receives-sloan-foundation-grants-software-data-curation-fellows-energy-fellows/" class="dlf-figure">
+        <figure>
+          <img src="./clir_test_files/Energy-economics.jpg" alt="New Postdoctoral Fellowships in Energy Economics" class="img-responsive" width="350" height="350" data-pagespeed-url-hash="1051312500" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" srcset="https://i2.wp.com/www.clir.org/wp-content/uploads/sites/6/2016/09/Energy-economics.jpg?zoom=2&amp;resize=350%2C350&amp;ssl=1" src-orig="https://i2.wp.com/www.clir.org/wp-content/uploads/sites/6/2016/09/Energy-economics.jpg?resize=350%2C350&amp;ssl=1" scale="2">
+        </figure>
+        <h3 class="dlf-figure-lead">New Postdoctoral Fellowships in Energy Economics</h3>
+        <p class="dlf-figure-text">
+With funds from the Sloan Foundation, CLIR has created a new program of Postdoctoral Fellowships in Data Curation for Energy Economics.<br>
+</p>
+      </a>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+      <a href="https://forum2018.diglib.org/" class="dlf-figure">
+        <figure>
+          <img src="./clir_test_files/DLF-forum2018.png" alt="DLF Forum 2018" class="img-responsive" width="350" height="350" data-pagespeed-url-hash="2440457489" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" srcset="https://i0.wp.com/www.clir.org/wp-content/uploads/sites/6/2018/02/DLF-forum2018.png?zoom=2&amp;resize=350%2C350&amp;ssl=1" src-orig="https://i0.wp.com/www.clir.org/wp-content/uploads/sites/6/2018/02/DLF-forum2018.png?resize=350%2C350&amp;ssl=1" scale="2">
+        </figure>
+        <h3 class="dlf-figure-lead">DLF Forum 2018</h3>
+        <p class="dlf-figure-text">
+Las Vegas, Oct. 15-17. Call for proposals now open through May 7!<br>
+</p>
+      </a>
+  </div>
+  <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12">
+      <a href="https://dlme.clir.org/" class="dlf-figure">
+        <figure>
+          <img src="./clir_test_files/Lion-gold-350.jpg" alt="Digital Library of the Middle East" class="img-responsive" width="350" height="350" data-pagespeed-url-hash="3033250353" onload="pagespeed.CriticalImages.checkImageForCriticality(this);" srcset="https://i2.wp.com/www.clir.org/wp-content/uploads/sites/6/2018/01/Lion-gold-350.jpg?zoom=2&amp;resize=350%2C350&amp;ssl=1" src-orig="https://i2.wp.com/www.clir.org/wp-content/uploads/sites/6/2018/01/Lion-gold-350.jpg?resize=350%2C350&amp;ssl=1" scale="2">
+        </figure>
+        <h3 class="dlf-figure-lead">Digital Library of the Middle East</h3>
+        <p class="dlf-figure-text">
+A new proof-of-concept for the DLME prototype is online and ready for you to explore!.<br>
+</p>
+      </a>
+  </div>
+<div class="clearfix visible-sm-block"></div>
+</div>
+</div></div> </section>
+<style type="text/css" scoped="scoped"></style><section class="section magee-section  section-5bbe68d1a5230" id="publications"> <div class="section-content"><div class="container">
+<div class="col-md-8 col-md-offset-2 dlf-section-heading text-center">
+<h2 class="dlf-lead">Publications</h2>
+<div class=" divider divider-title divider-border center"></div>
+<p class="dlf-sub">CLIR publishes newsletters, reports, and other occasional items.</p>
+</div>
+  <div class="col-sm-6 col-md-4">
+    <div class="report-cover">
+        <a href="https://www.clir.org/pubs/reports/pub175/"></a><a class="pdf-link image-link" href="https://www.clir.org/pubs/reports/pub175/" title="CLIR-pub175"><img width="232" height="300" src="./clir_test_files/CLIR-pub175-pdf.jpg" class="img-responsive center-block thumb-of-pdf" alt="thumbnail of CLIR-pub175" srcset="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?w=791&amp;ssl=1 791w, https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?resize=232%2C300&amp;ssl=1 232w, https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?resize=768%2C994&amp;ssl=1 768w" sizes="(max-width: 232px) 100vw, 232px" data-attachment-id="19232" data-permalink="https://www.clir.org/pubs/reports/pub175/clir-pub175/clir-pub175-2/" data-orig-file="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?fit=791%2C1024&amp;ssl=1" data-orig-size="791,1024" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="CLIR-pub175" data-image-description="" data-medium-file="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?fit=232%2C300&amp;ssl=1" data-large-file="https://i0.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2018/08/CLIR-pub175-pdf.jpg?fit=791%2C1024&amp;ssl=1" data-pagespeed-url-hash="741832107" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a><a href="https://www.clir.org/pubs/reports/pub175/"> </a>
+      </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="report-cover">
+        <a href="https://www.clir.org/pubs/reports/pub164/"></a><a class="pdf-link image-link" href="https://www.clir.org/pubs/reports/pub164/" title="ARSC Guide to Audio Preservation"><img width="234" height="300" src="./clir_test_files/ARSC-w-cover-pdf-1.jpg" class="img-responsive center-block thumb-of-pdf" alt="thumbnail of ARSC-w-cover" srcset="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?w=798&amp;ssl=1 798w, https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?resize=234%2C300&amp;ssl=1 234w, https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?resize=768%2C986&amp;ssl=1 768w" sizes="(max-width: 234px) 100vw, 234px" data-attachment-id="15798" data-permalink="https://www.clir.org/pubs/reports/pub164/arsc-w-cover/arsc-w-cover-2/" data-orig-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?fit=798%2C1024&amp;ssl=1" data-orig-size="798,1024" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="ARSC-w-cover" data-image-description="" data-medium-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?fit=234%2C300&amp;ssl=1" data-large-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2015/05/ARSC-w-cover-pdf-1.jpg?fit=798%2C1024&amp;ssl=1" data-pagespeed-url-hash="2188281906" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a><a href="https://www.clir.org/pubs/reports/pub164/"> </a>
+      </div>
+  </div>
+  <div class="col-sm-6 col-md-4">
+    <div class="report-cover">
+        <a href="https://www.clir.org/pubs/reports/pub171/"></a><a class="pdf-link image-link" href="https://www.clir.org/pubs/reports/pub171/" title="The Open Data Imperative"><img width="232" height="300" src="./clir_test_files/pub171-1-pdf.jpg" class="img-responsive center-block thumb-of-pdf" alt="thumbnail of pub171" srcset="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?w=791&amp;ssl=1 791w, https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?resize=232%2C300&amp;ssl=1 232w, https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?resize=768%2C994&amp;ssl=1 768w" sizes="(max-width: 232px) 100vw, 232px" data-attachment-id="15902" data-permalink="https://www.clir.org/pubs/reports/pub171/pub171/pub171-5/" data-orig-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?fit=791%2C1024&amp;ssl=1" data-orig-size="791,1024" data-comments-opened="0" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="pub171" data-image-description="" data-medium-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?fit=232%2C300&amp;ssl=1" data-large-file="https://i1.wp.com/clir.wordpress.clir.org/wp-content/uploads/sites/6/2016/07/pub171-1-pdf.jpg?fit=791%2C1024&amp;ssl=1" data-pagespeed-url-hash="3653715460" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"></a><a href="https://www.clir.org/pubs/reports/pub171/"> </a>
+      </div>
+  </div>
+<div class="clearfix visible-sm-block"></div>
+<div class="dlf-spacer dlf-spacer-sm"></div>
+<div class="col-md-4 col-md-offset-4 text-center"><a class="btn btn-clir" href="https://www.clir.org/pubs/">See Publications</a></div>
+</div></div> </section>
+<style type="text/css" scoped="scoped"></style><section class="section magee-section  section-5bbe68d1bf5df" id="join"> <div class="section-content"><div class="container">
+<section id="section-5" class="section magee-section alchem-home-section-4 alchem-home-style-3">
+<div class="section-content">
+<div class="container">
+<h1 class="magee-heading section-title"><span class="heading-inner"><span style="font-family: &#39;Cabin Condensed&#39;; font-size: 42px; color: #8ed7c4;">Join <strong>CLIR</strong> to help us create a culture of accessible information.</span></span></h1>
+<div class=" divider divider-title divider-border center"></div>
+<p class="section-subtitle">We believe the future depends on the preservation, organization, and accessibility of knowledge. Through collaboration with cultural institutions across the globe, we foster cross-disciplinary thought leadership, tactical programs, and professional development opportunities.</p>
+<div style="height: 60px;"></div>
+<div class="row">
+<div class="col-md-4">
+<div class="magee-feature-box style2" style="padding-left: 15px;">
+<h2>For the Future</h2>
+<div class="feature-content">CLIR aspires to transform the information landscape to support the advancement of knowledge.</div>
+</div>
+</div>
+<div class=" col-md-4">
+<div class="" data-animationduration="0.9" data-animationtype="fadeInUp" data-imageanimation="no">
+<div class="magee-feature-box style2" style="padding-left: 15px;">
+<h2>Outside the Box</h2>
+<div class="feature-content">CLIR promotes forward-looking collaborative solutions that transcend disciplinary, institutional, professional, and geographic boundaries in support of the public good.</div>
+</div>
+</div>
+</div>
+<div class=" col-md-4">
+<div class="" data-animationduration="0.9" data-animationtype="fadeInUp" data-imageanimation="no">
+<div class="magee-feature-box style2" style="padding-left: 15px;">
+<h2>Together</h2>
+<div class="feature-content">Institutions that see our agenda as integral to their own are invited to join CLIR.</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4 col-md-offset-4 text-center"><a class="btn btn-clir" href="https://www.clir.org/about/become-a-sponsor-or-member/">Join Us</a></div>
+</div>
+</div>
+</section>
+</div></div> </section>
+
+    <div class="comments-area text-left">
+
+                                     </div>
+
+	</div><!-- .entry-content -->
+
+		                        </div>
+                                                        </div>
+                </div>
+            </div>
+       </div>
+<!--Footer-->
+
+ <footer class="">
+                    <div class="footer-widget-area">
+                <div class="container">
+                    <div class="row">
+                                        <div class="col-md-3">
+                    <div id="text-3" class="widget widget-box widget_text"><h2 class="widget-title">Contact</h2>			<div class="textwidget"><address>
+          CLIR<br>
+          1707 L St. NW,<br>
+          Suite 650 <br>
+          Washington, DC 20036 <p></p>
+<p>          <abbr title="Phone">P:</abbr>  (202) 939-4750 <br>
+        </p></address>
+</div>
+		<span class="seperator extralight-border"></span></div>                    </div>
+
+                                        <div class="col-md-3">
+                    <div id="social_media_links-6" class="widget widget-box widget_social_media_links"><h2 class="widget-title">Elsewhere</h2><ul class="list-unstyled clir-social"><li><a target="_blank" rel="" href="https://www.facebook.com/pages/Council-on-Library-and-Information-Resources-CLIR/300100435096" data-placement="left" data-toggle="tooltip" title="" data-original-title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i> Facebook</a></li><li><a target="_blank" rel="" href="https://twitter.com/clirnews" data-placement="left" data-toggle="tooltip" title="" data-original-title="Twitter"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a></li><li><a target="_blank" rel="" href="https://www.linkedin.com/company/6203386/" data-placement="left" data-toggle="tooltip" title="" data-original-title="LinkedIn"><i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a></li><li><a target="_blank" rel="" href="http://www.youtube.com/user/DLFCLIR?blend=2&amp;ob=0" data-placement="left" data-toggle="tooltip" title="" data-original-title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i> YouTube</a></li><li><a target="_blank" rel="" href="https://www.clir.org/feed" data-placement="left" data-toggle="tooltip" title="" data-original-title="RSS"><i class="fa fa-rss" aria-hidden="true"></i> RSS</a></li></ul><span class="seperator extralight-border"></span></div>                    </div>
+
+                                        <div class="col-md-3">
+                    <div id="emma-widget-4" class="widget widget-box emma-widget">
+											<h2 class="widget-title">Stay in Touch</h2>
+                                        <iframe src="https://clir.informz.net/clir/pages/CLIR_forWebsite" height="300" style="border:none;" scrolling="no"> </iframe>
+											</div><!-- end .emma-wrap --></div><!-- end #emma-form --><span class="seperator extralight-border"></span></div>                    </div>
+
+                                        <div class="col-md-3">
+                    <div id="text-2" class="widget widget-box widget_text"><h2 class="widget-title">About CLIR</h2>			<div class="textwidget"><p>CLIR is an independent, nonprofit organization that forges strategies to enhance research, teaching, and learning environments in collaboration with libraries, cultural institutions, and communities of higher learning.</p>
+<p><a href="https://www.clir.org/privacy">Privacy</a></p>
+</div>
+		<span class="seperator extralight-border"></span></div><div id="informz_tracking_widget-2" class="widget widget-box widget_informz_tracking_widget"><script>var z_account="DBA9C912-7373-41C8-BD41-8ABC229F5E02",z_collector="clir.informz.net",z_cookieDomain=".clir.org";(function(o,e,r,c,n,t,a){o[n]||(o.GlobalSnowplowNamespace=o.GlobalSnowplowNamespace||[],o.GlobalSnowplowNamespace.push(n),o[n]=function(){(o[n].q=o[n].q||[]).push(arguments)},o[n].q=o[n].q||[],t=e.createElement(r),a=e.getElementsByTagName(r)[0],t.async=1,t.src=c,a.parentNode.insertBefore(t,a))})(window,document,"script","https://"+z_collector+"/web_trk/sp.js","informz_trk"),informz_trk("newTracker","infz",z_collector+"/web_trk/collector/",{appId:z_account,cookieDomain:z_cookieDomain}),informz_trk("setUserIdFromLocation","_zs"),informz_trk("enableActivityTracking",30,15),informz_trk("trackPageView",null);</script><span class="seperator extralight-border"></span></div>                    </div>
+
+                                        </div>
+                </div>
+            </div>
+
+            <div class="footer-info-area">
+                <div class="container">
+                                     <div class="clearfix"></div>
+                                                            <div class="site-info">
+                        <p class="pull-right">
+                            All content on this site is available for re-use under
+                            <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0 License</a>
+                        </p>
+                        <p class="logo">
+                            <a href="https://www.clir.org/">
+                                <i class="icon-clir-logo-square clir-color"></i>
+                                <span class="clir clir-font clir-color">CLIR</span>
+                            </a>
+                        </p>
+                                        </div>
+                                    </div>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript"></script><script type="text/javascript"></script><link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="./clir_test_files/A.font-awesome.css.pagespeed.cf.bPd2cGORvI.css" type="text/css" media="all">			<script type="text/javascript">function revslider_showDoubleJqueryError(sliderID){var errorMessage="Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";errorMessage+="<br> This includes make eliminates the revolution slider libraries, and make it not work.";errorMessage+="<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";errorMessage+="<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";errorMessage="<span style='font-size:16px;color:#BC0C06;'>"+errorMessage+"</span>";jQuery(sliderID).show().html(errorMessage);}</script>
+			<script type="text/javascript">//<![CDATA[
+!function(t){var a=function(){t("img[data-recalc-dims]").each(function a(){var o=t(this);if(this.complete){if(o.data("lazy-src")&&o.attr("src")!==o.data("lazy-src"))return void o.load(a);var d=this.width,i=this.height;d&&d>0&&i&&i>0&&(o.attr({width:d,height:i}),e(this))}else o.load(a)})},e=function(a){t(a).removeAttr("data-recalc-dims").removeAttr("scale")};t(document).ready(a),"on"in t.fn?t(document.body).on("post-load",a):t(document).delegate("body","post-load",a)}(jQuery);
+//]]></script>
+<script type="text/javascript">//<![CDATA[
+var wpcf7={"apiSettings":{"root":"https:\/\/www.clir.org\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+//]]></script>
+<script src="./clir_test_files/contact-form-7,_includes,_js,_scripts.js,qver==5.0.4+wp-accessibility,_js,_longdesc.button.js,qver==1.0.pagespeed.jc.FYcn81H98n.js"></script><script>eval(mod_pagespeed_6JEyr4MMhZ);</script>
+<script type="text/javascript" src="./clir_test_files/devicepx-jetpack.js"></script>
+<script>eval(mod_pagespeed_9bZ0hEKrDB);</script>
+<script type="text/javascript" src="./clir_test_files/jquery.mb.YTPlayer.js,qver=b5d70210c4f2bf1e1042e162de63e54a.pagespeed.jm.dQrWEjsUSN.js"></script>
+<script src="./clir_test_files/plugins,_bootstrap,_js,_bootstrap.min.js+js,_jquery.prettyPhoto.js+js,_jquery.parallax.js.pagespeed.jc.rQw61WSKQ1.js"></script><script>eval(mod_pagespeed_1fmVyPDU1l);</script>
+<script>eval(mod_pagespeed_fVf_5tam$d);</script>
+<script>eval(mod_pagespeed_5wOX$FfeUW);</script>
+<script src="./clir_test_files/wp-content,_themes,_alchem-pro,_plugins,_owl-carousel,_owl.carousel.min.js+wp-includes,_js,_imagesloaded.min.js,qver==3.2.0+wp-includes,_js,_masonry.min.js,qver==3.3.2+wp-content,_themes,_alchem-pro,_plugins,_jquery-countdown,_jquery.countdown.min.js+w.js"></script><script>eval(mod_pagespeed_mGCl$9eYG7);</script>
+<script>eval(mod_pagespeed_Che1xByOQs);</script>
+<script>eval(mod_pagespeed_eAIb0XIy_M);</script>
+<script>eval(mod_pagespeed_w7nSwMdhSD);</script>
+<script>eval(mod_pagespeed_ZB14o0zjP6);</script>
+<script src="./clir_test_files/jquery.waypoints.js+jquery.easing.min.js+jquery.mixitup.min.js.pagespeed.jc.ohG565eLBp.js"></script><script>eval(mod_pagespeed_LYYJ7ogKoM);</script>
+<script>eval(mod_pagespeed_$PBoxF1nRg);</script>
+<script>eval(mod_pagespeed_gtzjekMscr);</script>
+<script type="text/javascript">//<![CDATA[
+var alchem_params={"ajaxurl":"https:\/\/www.clir.org\/wp-admin\/admin-ajax.php","themeurl":"https:\/\/www.clir.org\/wp-content\/themes\/alchem-pro","responsive":"yes","site_width":"1170","sticky_header":"yes","show_search_icon":"yes","slider_autoplay":"yes","slideshow_speed":"3000","portfolio_grid_pagination_type":"pagination","blog_pagination_type":"pagination","global_color":"#9a1c46","admin_ajax_nonce":"39165511af","admin_ajax":"https:\/\/www.clir.org\/wp-admin\/admin-ajax.php","isMobile":"0","footer_sticky":"0"};
+//]]></script>
+<script src="./clir_test_files/main.js+jquery.infinitescroll.js.pagespeed.jc.jmpwGr1uLn.js"></script><script>eval(mod_pagespeed_HY1amF5xew);</script>
+<script>eval(mod_pagespeed_u6tTrK1QiP);</script>
+<script type="text/javascript">//<![CDATA[
+var magee_params={"ajaxurl":"https:\/\/www.clir.org\/wp-admin\/admin-ajax.php","themeurl":"https:\/\/www.clir.org\/wp-content\/themes\/alchem-pro\/lib\/magee-shortcodes-pro\/assets","required":" is required"};
+//]]></script>
+<script src="./clir_test_files/themes,_alchem-pro,_lib,_magee-shortcodes-pro,_assets,_js,_magee-shortcodes.js,qver==2.3.1+themes,_alchem-pro,_lib,_magee-shortcodes-pro,_assets,_js,_magee-modal.js,qver==2.3.1+plugins,_jetpack,__inc,_build,_widgets,_eu-cookie-law,_eu-cookie-law.min.js.js"></script><script>eval(mod_pagespeed_TW5_$t6e$N);</script>
+<script>eval(mod_pagespeed_49W2QRb0YC);</script>
+<script>eval(mod_pagespeed_Ldc8BzmbAy);</script><div id="eu_cookie_law_widget-2" class="widget widget-box widget_eu_cookie_law_widget" style="display: block;"><div class="hide-on-button" data-hide-timeout="30" data-consent-expiration="180" id="eu-cookie-law">
+	<form method="post">
+		<input type="submit" value="Close and accept" class="accept">
+	</form>
+
+	Privacy &amp; Cookies: This site uses cookies. By continuing to use this website, you agree to their use. <br>
+To find out more, including how to control cookies, see here:
+	<a href="https://automattic.com/cookies/">
+		Cookie Policy	</a>
+</div>
+<span class="seperator extralight-border"></span></div>
+<script type="text/javascript">//<![CDATA[
+var wpgdprcData={"ajaxURL":"https:\/\/www.clir.org\/wp-admin\/admin-ajax.php","ajaxSecurity":"58f105382c"};
+//]]></script>
+<script src="./clir_test_files/wp-content,_plugins,_wp-gdpr-compliance,_assets,_js,_front.js,qver==1531925990+wp-includes,_js,_wp-embed.min.js,qver==b5d70210c4f2bf1e1042e162de63e54a.pagespeed.jc.g5vvik7RwC.js"></script><script>eval(mod_pagespeed_ri7$9aKA32);</script>
+<script>eval(mod_pagespeed_zFFsVSpYru);</script>
+<script type="text/javascript">//<![CDATA[
+var ajax_object={"ajax_url":"https:\/\/www.clir.org\/wp-admin\/admin-ajax.php"};
+//]]></script>
+<script type="text/javascript" src="./clir_test_files/emma.js,qver=201706140834.pagespeed.jm.zeQeUgR13m.js"></script>
+<script type="text/javascript" src="./clir_test_files/e-201841.js" async="async" defer="defer"></script>
+<script type="text/javascript">_stq=window._stq||[];_stq.push(['view',{v:'ext',j:'1:6.6.1',blog:'122234237',post:'15240',tz:'-4',srv:'www.clir.org'}]);_stq.push(['clickTrackerInit','122234237','15240']);</script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"0d572a862a","applicationID":"17985897","transactionName":"ZwEAMBYEVkAAB0dYDV5LIwcQDFddThRSVgc=","queueTime":0,"applicationTime":3443,"atts":"S0YDRl4eRU4=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
+
+Page Caching using apc (SSL caching disabled)
+
+Served from: www.clir.org @ 2018-10-10 17:02:09 by W3 Total Cache
+--><img src="./clir_test_files/g.gif" alt=":)" width="6" height="5" id="wpstats" scale="0"><div id="__lpform_emma-main-input" style="max-height: 16px; vertical-align: top; position: absolute; top: 7139.92px; left: 954.875px; z-index: 12;"><img id="__lpform_emma-main-input_icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAbhJREFUWAntVr1OhEAQZsECSKBQC/9aba+z9iU08SWuvPcwNrY2V+hL+AoabbRE6bSAxEAM4DfkuFuWXU5y/MSETTbMznzzs7Mzy2raOMYMIAOWZR3puj5njPmYWcfTJ1/kk5LPQBxGUfQEepsYPY5P0zQnRpqmN3B62qPjwpWdJMkess0+wDkouD1/fU1x3p5hGJe2be/TJBo4T4ZtGrBoQxaA57pupR6IJwti0wC2RAOo0FkQBF8in3jIxAw1M+dl4J3z63U09MsQMSWU8jJitSKZiN90ra/MD0NVAojj+EwVSp1MpbOOjwyyTAC9O44zEeuAijAMw0dg8xus0IH+fUH/5ZtlWblmFGfoUev10YaVI1js4hnfb0y2mEQTr/VROQIwpmiVa5kntOgUKbziZa0eARzc8sZlNGHgtLU/Jn8Tpii+XZlTnkcYBJC2GMSyC96Q3hPemYqG81fIjlXyJnz+Kn5poEjYPAAcyUUDPQ31dcfjlwFgVz/IAC9T0jwW//RG9wB0S3ZVbVgCdblAQMM+SHQE8NDlDutsk+/iUUp3/E4duANZ/ijN7Q75LO9gY6PJf5aBX7tnEYIBb5bnAAAAAElFTkSuQmCC" style="opacity: 0.6; vertical-align: top;" height="16" width="16" scale="0"></div></body></html>
